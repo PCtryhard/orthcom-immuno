@@ -1,5 +1,5 @@
 # /home/max/mhc_i/method/netmhcpan-4.1-executable/netmhcpan_4_1_executable/Linux_x86_64/bin/netMHCpan -p -BA -a HLA-A02:01 -f /mnt/c/Users/maxim/orthcom-immuno/results/step2/input_peptides.txt
-# Sun Jun  7 23:01:27 2026
+# Sun Jun  7 23:17:41 2026
 # User: max
 # PWD : /mnt/c/Users/maxim/orthcom-immuno
 # Host: Linux Chunk 6.6.87.2-microsoft-standard-WSL2 x86_64
@@ -36,7 +36,7 @@
 
 # NetMHCpan version 4.1b
 
-# Tmpdir made /tmp/netMHCpanLcfpJa
+# Tmpdir made /tmp/netMHCpantqFyel
 # Input is in PEPTIDE format
 
 # Make both EL and BA predictions
