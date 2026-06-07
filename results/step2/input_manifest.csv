@@ -1,0 +1,463 @@
+peptide,length,variant,modification_type,pair_status,modified_sequence,measured_modified_IC50_nM,measured_native_IC50_nM,source_row
+MALWMRLLP,9,native,Citrullination,complete,MALWMULLP,2117,4539,r2
+MALWMRLLP,9,naive_surrogate,Citrullination,complete,MALWMULLP,2117,4539,r2
+MALWMQLLP,9,charge_surrogate,Citrullination,complete,MALWMULLP,2117,4539,r2
+MALWMRLLPL,10,native,Citrullination,complete,MALWMULLPL,262,1255,r3
+MALWMRLLPL,10,naive_surrogate,Citrullination,complete,MALWMULLPL,262,1255,r3
+MALWMQLLPL,10,charge_surrogate,Citrullination,complete,MALWMULLPL,262,1255,r3
+ALWMRLLPL,9,native,Citrullination,complete,ALWMULLPL,28,218,r4
+ALWMRLLPL,9,naive_surrogate,Citrullination,complete,ALWMULLPL,28,218,r4
+ALWMQLLPL,9,charge_surrogate,Citrullination,complete,ALWMULLPL,28,218,r4
+ALWMRLLPLL,10,native,Citrullination,complete,ALWMULLPLL,69,190,r5
+ALWMRLLPLL,10,naive_surrogate,Citrullination,complete,ALWMULLPLL,69,190,r5
+ALWMQLLPLL,10,charge_surrogate,Citrullination,complete,ALWMULLPLL,69,190,r5
+LWMRLLPLL,9,native,Citrullination,complete,LWMULLPLL,148,266,r6
+LWMRLLPLL,9,naive_surrogate,Citrullination,complete,LWMULLPLL,148,266,r6
+LWMQLLPLL,9,charge_surrogate,Citrullination,complete,LWMULLPLL,148,266,r6
+LWMRLLPLLA,10,native,Citrullination,complete,LWMULLPLLA,61,406,r7
+LWMRLLPLLA,10,naive_surrogate,Citrullination,complete,LWMULLPLLA,61,406,r7
+LWMQLLPLLA,10,charge_surrogate,Citrullination,complete,LWMULLPLLA,61,406,r7
+WMRLLPLLA,9,native,Citrullination,complete,WMULLPLLA,1007,1530,r8
+WMRLLPLLA,9,naive_surrogate,Citrullination,complete,WMULLPLLA,1007,1530,r8
+WMQLLPLLA,9,charge_surrogate,Citrullination,complete,WMULLPLLA,1007,1530,r8
+WMRLLPLLAL,10,native,Citrullination,complete,WMULLPLLAL,310,654,r9
+WMRLLPLLAL,10,naive_surrogate,Citrullination,complete,WMULLPLLAL,310,654,r9
+WMQLLPLLAL,10,charge_surrogate,Citrullination,complete,WMULLPLLAL,310,654,r9
+MRLLPLLAL,9,native,Citrullination,complete,MULLPLLAL,1863,228,r10
+MRLLPLLAL,9,naive_surrogate,Citrullination,complete,MULLPLLAL,1863,228,r10
+MQLLPLLAL,9,charge_surrogate,Citrullination,complete,MULLPLLAL,1863,228,r10
+MRLLPLLALL,10,native,Citrullination,complete,MULLPLLALL,98,10,r11
+MRLLPLLALL,10,naive_surrogate,Citrullination,complete,MULLPLLALL,98,10,r11
+MQLLPLLALL,10,charge_surrogate,Citrullination,complete,MULLPLLALL,98,10,r11
+RLLPLLALL,9,native,Citrullination,complete,ULLPLLALL,83,145,r12
+RLLPLLALL,9,naive_surrogate,Citrullination,complete,ULLPLLALL,83,145,r12
+QLLPLLALL,9,charge_surrogate,Citrullination,complete,ULLPLLALL,83,145,r12
+RLLPLLALLA,10,native,Citrullination,complete,ULLPLLALLA,70,11,r13
+RLLPLLALLA,10,naive_surrogate,Citrullination,complete,ULLPLLALLA,70,11,r13
+QLLPLLALLA,10,charge_surrogate,Citrullination,complete,ULLPLLALLA,70,11,r13
+FVNQHLCGS,9,native,Oxidation of C,both_nonbinder,FVNQHLBGS,,,r14
+FVNQHLCGS,9,naive_surrogate,Oxidation of C,both_nonbinder,FVNQHLBGS,,,r14
+FVNQHLDGS,9,charge_surrogate,Oxidation of C,both_nonbinder,FVNQHLBGS,,,r14
+FVNQHLCGS,9,native,Deamidation,both_nonbinder,FVOZHLCGS,,,r16
+FVDEHLCGS,9,naive_surrogate,Deamidation,both_nonbinder,FVOZHLCGS,,,r16
+FVDEHLCGS,9,charge_surrogate,Deamidation,both_nonbinder,FVOZHLCGS,,,r16
+FVNQHLCGS,9,native,Pan oxidation,both_nonbinder,YVNQXLBGS,,,r17
+YVNQHLCGS,9,naive_surrogate,Pan oxidation,both_nonbinder,YVNQXLBGS,,,r17
+YVNQHLDGS,9,charge_surrogate,Pan oxidation,both_nonbinder,YVNQXLBGS,,,r17
+FVNQHLCGS,9,native,Pan oxidation,both_nonbinder,FVNQXLCGS,,,r18
+FVNQHLCGS,9,naive_surrogate,Pan oxidation,both_nonbinder,FVNQXLCGS,,,r18
+FVNQHLCGS,9,charge_surrogate,Pan oxidation,both_nonbinder,FVNQXLCGS,,,r18
+FVNQHLCGSH,10,native,Oxidation of C,modified_nonbinder,FVNQHLBGSH,,13213,r19
+FVNQHLCGSH,10,naive_surrogate,Oxidation of C,modified_nonbinder,FVNQHLBGSH,,13213,r19
+FVNQHLDGSH,10,charge_surrogate,Oxidation of C,modified_nonbinder,FVNQHLBGSH,,13213,r19
+FVNQHLCGSH,10,native,Deamidation,modified_nonbinder,FVOZHLCGSH,,13213,r21
+FVDEHLCGSH,10,naive_surrogate,Deamidation,modified_nonbinder,FVOZHLCGSH,,13213,r21
+FVDEHLCGSH,10,charge_surrogate,Deamidation,modified_nonbinder,FVOZHLCGSH,,13213,r21
+FVNQHLCGSH,10,native,Pan oxidation,modified_nonbinder,YVNQXLBGSX,,13213,r22
+YVNQHLCGSH,10,naive_surrogate,Pan oxidation,modified_nonbinder,YVNQXLBGSX,,13213,r22
+YVNQHLDGSH,10,charge_surrogate,Pan oxidation,modified_nonbinder,YVNQXLBGSX,,13213,r22
+FVNQHLCGSH,10,native,Pan oxidation,modified_nonbinder,FVNQXLCGSH,,13213,r23
+FVNQHLCGSH,10,naive_surrogate,Pan oxidation,modified_nonbinder,FVNQXLCGSH,,13213,r23
+FVNQHLCGSH,10,charge_surrogate,Pan oxidation,modified_nonbinder,FVNQXLCGSH,,13213,r23
+VNQHLCGSH,9,native,Oxidation of C,both_nonbinder,VNQHLBGSH,,,r24
+VNQHLCGSH,9,naive_surrogate,Oxidation of C,both_nonbinder,VNQHLBGSH,,,r24
+VNQHLDGSH,9,charge_surrogate,Oxidation of C,both_nonbinder,VNQHLBGSH,,,r24
+VNQHLCGSH,9,native,Deamidation,both_nonbinder,VOZHLCGSH,,,r26
+VDEHLCGSH,9,naive_surrogate,Deamidation,both_nonbinder,VOZHLCGSH,,,r26
+VDEHLCGSH,9,charge_surrogate,Deamidation,both_nonbinder,VOZHLCGSH,,,r26
+VNQHLCGSH,9,native,Pan oxidation,both_nonbinder,VNQXLBGSX,,,r27
+VNQHLCGSH,9,naive_surrogate,Pan oxidation,both_nonbinder,VNQXLBGSX,,,r27
+VNQHLDGSH,9,charge_surrogate,Pan oxidation,both_nonbinder,VNQXLBGSX,,,r27
+VNQHLCGSH,9,native,Pan oxidation,both_nonbinder,VNQXLCGSH,,,r28
+VNQHLCGSH,9,naive_surrogate,Pan oxidation,both_nonbinder,VNQXLCGSH,,,r28
+VNQHLCGSH,9,charge_surrogate,Pan oxidation,both_nonbinder,VNQXLCGSH,,,r28
+VNQHLCGSHL,10,native,Oxidation of C,modified_nonbinder,VNQHLBGSHL,,6643,r29
+VNQHLCGSHL,10,naive_surrogate,Oxidation of C,modified_nonbinder,VNQHLBGSHL,,6643,r29
+VNQHLDGSHL,10,charge_surrogate,Oxidation of C,modified_nonbinder,VNQHLBGSHL,,6643,r29
+VNQHLCGSHL,10,native,Deamidation,modified_nonbinder,VOZHLCGSHL,,6643,r31
+VDEHLCGSHL,10,naive_surrogate,Deamidation,modified_nonbinder,VOZHLCGSHL,,6643,r31
+VDEHLCGSHL,10,charge_surrogate,Deamidation,modified_nonbinder,VOZHLCGSHL,,6643,r31
+VNQHLCGSHL,10,native,Pan oxidation,modified_nonbinder,VNQXLBGSXL,,6643,r32
+VNQHLCGSHL,10,naive_surrogate,Pan oxidation,modified_nonbinder,VNQXLBGSXL,,6643,r32
+VNQHLDGSHL,10,charge_surrogate,Pan oxidation,modified_nonbinder,VNQXLBGSXL,,6643,r32
+VNQHLCGSHL,10,native,Pan oxidation,modified_nonbinder,VNQXLCGSHL,,6643,r33
+VNQHLCGSHL,10,naive_surrogate,Pan oxidation,modified_nonbinder,VNQXLCGSHL,,6643,r33
+VNQHLCGSHL,10,charge_surrogate,Pan oxidation,modified_nonbinder,VNQXLCGSHL,,6643,r33
+NQHLCGSHL,9,native,Oxidation of C,both_nonbinder,NQHLBGSHL,,,r34
+NQHLCGSHL,9,naive_surrogate,Oxidation of C,both_nonbinder,NQHLBGSHL,,,r34
+NQHLDGSHL,9,charge_surrogate,Oxidation of C,both_nonbinder,NQHLBGSHL,,,r34
+NQHLCGSHL,9,native,Deamidation,both_nonbinder,OZHLCGSHL,,,r36
+DEHLCGSHL,9,naive_surrogate,Deamidation,both_nonbinder,OZHLCGSHL,,,r36
+DEHLCGSHL,9,charge_surrogate,Deamidation,both_nonbinder,OZHLCGSHL,,,r36
+NQHLCGSHL,9,native,Pan oxidation,both_nonbinder,NQXLBGSXL,,,r37
+NQHLCGSHL,9,naive_surrogate,Pan oxidation,both_nonbinder,NQXLBGSXL,,,r37
+NQHLDGSHL,9,charge_surrogate,Pan oxidation,both_nonbinder,NQXLBGSXL,,,r37
+NQHLCGSHL,9,native,Pan oxidation,both_nonbinder,NQXLCGSHL,,,r38
+NQHLCGSHL,9,naive_surrogate,Pan oxidation,both_nonbinder,NQXLCGSHL,,,r38
+NQHLCGSHL,9,charge_surrogate,Pan oxidation,both_nonbinder,NQXLCGSHL,,,r38
+NQHLCGSHLV,10,native,Oxidation of C,modified_nonbinder,NQHLBGSHLV,,7994,r39
+NQHLCGSHLV,10,naive_surrogate,Oxidation of C,modified_nonbinder,NQHLBGSHLV,,7994,r39
+NQHLDGSHLV,10,charge_surrogate,Oxidation of C,modified_nonbinder,NQHLBGSHLV,,7994,r39
+NQHLCGSHLV,10,native,Deamidation,modified_nonbinder,OZHLCGSHLV,,7994,r41
+DEHLCGSHLV,10,naive_surrogate,Deamidation,modified_nonbinder,OZHLCGSHLV,,7994,r41
+DEHLCGSHLV,10,charge_surrogate,Deamidation,modified_nonbinder,OZHLCGSHLV,,7994,r41
+NQHLCGSHLV,10,native,Pan oxidation,modified_nonbinder,NQXLBGSXLV,,7994,r42
+NQHLCGSHLV,10,naive_surrogate,Pan oxidation,modified_nonbinder,NQXLBGSXLV,,7994,r42
+NQHLDGSHLV,10,charge_surrogate,Pan oxidation,modified_nonbinder,NQXLBGSXLV,,7994,r42
+NQHLCGSHLV,10,native,Pan oxidation,modified_nonbinder,NQXLCGSHLV,,7994,r43
+NQHLCGSHLV,10,naive_surrogate,Pan oxidation,modified_nonbinder,NQXLCGSHLV,,7994,r43
+NQHLCGSHLV,10,charge_surrogate,Pan oxidation,modified_nonbinder,NQXLCGSHLV,,7994,r43
+QHLCGSHLV,9,native,Oxidation of C,native_nonbinder,QHLBGSHLV,37883,,r45
+QHLCGSHLV,9,naive_surrogate,Oxidation of C,native_nonbinder,QHLBGSHLV,37883,,r45
+QHLDGSHLV,9,charge_surrogate,Oxidation of C,native_nonbinder,QHLBGSHLV,37883,,r45
+QHLCGSHLV,9,native,Pan oxidation,both_nonbinder,QXLBGSXLV,,,r46
+QHLCGSHLV,9,naive_surrogate,Pan oxidation,both_nonbinder,QXLBGSXLV,,,r46
+QHLDGSHLV,9,charge_surrogate,Pan oxidation,both_nonbinder,QXLBGSXLV,,,r46
+QHLCGSHLV,9,native,Pan oxidation,both_nonbinder,QXLCGSHLV,,,r47
+QHLCGSHLV,9,naive_surrogate,Pan oxidation,both_nonbinder,QXLCGSHLV,,,r47
+QHLCGSHLV,9,charge_surrogate,Pan oxidation,both_nonbinder,QXLCGSHLV,,,r47
+QHLCGSHLV,9,native,Deamidation,both_nonbinder,ZHLCGSHLV,,,r48
+EHLCGSHLV,9,naive_surrogate,Deamidation,both_nonbinder,ZHLCGSHLV,,,r48
+EHLCGSHLV,9,charge_surrogate,Deamidation,both_nonbinder,ZHLCGSHLV,,,r48
+QHLCGSHLVE,10,native,Oxidation of C,both_nonbinder,QHLBGSHLVE,,,r49
+QHLCGSHLVE,10,naive_surrogate,Oxidation of C,both_nonbinder,QHLBGSHLVE,,,r49
+QHLDGSHLVE,10,charge_surrogate,Oxidation of C,both_nonbinder,QHLBGSHLVE,,,r49
+QHLCGSHLVE,10,native,Pan oxidation,both_nonbinder,QXLBGSXLVE,,,r51
+QHLCGSHLVE,10,naive_surrogate,Pan oxidation,both_nonbinder,QXLBGSXLVE,,,r51
+QHLDGSHLVE,10,charge_surrogate,Pan oxidation,both_nonbinder,QXLBGSXLVE,,,r51
+QHLCGSHLVE,10,native,Pan oxidation,both_nonbinder,QXLCGSHLVE,,,r52
+QHLCGSHLVE,10,naive_surrogate,Pan oxidation,both_nonbinder,QXLCGSHLVE,,,r52
+QHLCGSHLVE,10,charge_surrogate,Pan oxidation,both_nonbinder,QXLCGSHLVE,,,r52
+QHLCGSHLVE,10,native,Deamidation,both_nonbinder,ZHLCGSHLVE,,,r53
+EHLCGSHLVE,10,naive_surrogate,Deamidation,both_nonbinder,ZHLCGSHLVE,,,r53
+EHLCGSHLVE,10,charge_surrogate,Deamidation,both_nonbinder,ZHLCGSHLVE,,,r53
+HLCGSHLVE,9,native,Oxidation of C,both_nonbinder,HLBGSHLVE,,,r54
+HLCGSHLVE,9,naive_surrogate,Oxidation of C,both_nonbinder,HLBGSHLVE,,,r54
+HLDGSHLVE,9,charge_surrogate,Oxidation of C,both_nonbinder,HLBGSHLVE,,,r54
+HLCGSHLVE,9,native,Pan oxidation,both_nonbinder,XLBGSXLVE,,,r55
+HLCGSHLVE,9,naive_surrogate,Pan oxidation,both_nonbinder,XLBGSXLVE,,,r55
+HLDGSHLVE,9,charge_surrogate,Pan oxidation,both_nonbinder,XLBGSXLVE,,,r55
+HLCGSHLVE,9,native,Pan oxidation,both_nonbinder,XLCGSHLVE,,,r56
+HLCGSHLVE,9,naive_surrogate,Pan oxidation,both_nonbinder,XLCGSHLVE,,,r56
+HLCGSHLVE,9,charge_surrogate,Pan oxidation,both_nonbinder,XLCGSHLVE,,,r56
+HLCGSHLVEA,10,native,Oxidation of C,complete,HLBGSHLVEA,6210,7536,r57
+HLCGSHLVEA,10,naive_surrogate,Oxidation of C,complete,HLBGSHLVEA,6210,7536,r57
+HLDGSHLVEA,10,charge_surrogate,Oxidation of C,complete,HLBGSHLVEA,6210,7536,r57
+HLCGSHLVEA,10,native,Pan oxidation,complete,XLBGSXLVEA,10687,7536,r58
+HLCGSHLVEA,10,naive_surrogate,Pan oxidation,complete,XLBGSXLVEA,10687,7536,r58
+HLDGSHLVEA,10,charge_surrogate,Pan oxidation,complete,XLBGSXLVEA,10687,7536,r58
+HLCGSHLVEA,10,native,Pan oxidation,complete,XLCGSHLVEA,11800,7536,r59
+HLCGSHLVEA,10,naive_surrogate,Pan oxidation,complete,XLCGSHLVEA,11800,7536,r59
+HLCGSHLVEA,10,charge_surrogate,Pan oxidation,complete,XLCGSHLVEA,11800,7536,r59
+LCGSHLVEA,9,native,Oxidation of C,complete,LBGSHLVEA,14796,1353,r60
+LCGSHLVEA,9,naive_surrogate,Oxidation of C,complete,LBGSHLVEA,14796,1353,r60
+LDGSHLVEA,9,charge_surrogate,Oxidation of C,complete,LBGSHLVEA,14796,1353,r60
+LCGSHLVEA,9,native,Pan oxidation,complete,LBGSXLVEA,13270,1353,r61
+LCGSHLVEA,9,naive_surrogate,Pan oxidation,complete,LBGSXLVEA,13270,1353,r61
+LDGSHLVEA,9,charge_surrogate,Pan oxidation,complete,LBGSXLVEA,13270,1353,r61
+LCGSHLVEAL,10,native,Oxidation of C,both_nonbinder,LBGSHLVEAL,,,r62
+LCGSHLVEAL,10,naive_surrogate,Oxidation of C,both_nonbinder,LBGSHLVEAL,,,r62
+LDGSHLVEAL,10,charge_surrogate,Oxidation of C,both_nonbinder,LBGSHLVEAL,,,r62
+LCGSHLVEAL,10,native,Pan oxidation,both_nonbinder,LBGSXLVEAL,,,r63
+LCGSHLVEAL,10,naive_surrogate,Pan oxidation,both_nonbinder,LBGSXLVEAL,,,r63
+LDGSHLVEAL,10,charge_surrogate,Pan oxidation,both_nonbinder,LBGSXLVEAL,,,r63
+CGSHLVEAL,9,native,Oxidation of C,both_nonbinder,BGSHLVEAL,,,r64
+CGSHLVEAL,9,naive_surrogate,Oxidation of C,both_nonbinder,BGSHLVEAL,,,r64
+DGSHLVEAL,9,charge_surrogate,Oxidation of C,both_nonbinder,BGSHLVEAL,,,r64
+CGSHLVEAL,9,native,Pan oxidation,both_nonbinder,BGSXLVEAL,,,r65
+CGSHLVEAL,9,naive_surrogate,Pan oxidation,both_nonbinder,BGSXLVEAL,,,r65
+DGSHLVEAL,9,charge_surrogate,Pan oxidation,both_nonbinder,BGSXLVEAL,,,r65
+CGSHLVEALY,10,native,Oxidation of C,complete,BGSHLVEALY,8043,33691,r66
+CGSHLVEALY,10,naive_surrogate,Oxidation of C,complete,BGSHLVEALY,8043,33691,r66
+DGSHLVEALY,10,charge_surrogate,Oxidation of C,complete,BGSHLVEALY,8043,33691,r66
+CGSHLVEALY,10,native,Chlorination,complete,CGSHLVEALJ,38276,33691,r67
+CGSHLVEALY,10,naive_surrogate,Chlorination,complete,CGSHLVEALJ,38276,33691,r67
+CGSHLVEALY,10,charge_surrogate,Chlorination,complete,CGSHLVEALJ,38276,33691,r67
+CGSHLVEALY,10,native,Pan oxidation,modified_nonbinder,BGSXLVEALY,,33691,r68
+CGSHLVEALY,10,naive_surrogate,Pan oxidation,modified_nonbinder,BGSXLVEALY,,33691,r68
+DGSHLVEALY,10,charge_surrogate,Pan oxidation,modified_nonbinder,BGSXLVEALY,,33691,r68
+GSHLVEALY,9,native,Chlorination,complete,GSHLVEALJ,30634,3962,r69
+GSHLVEALY,9,naive_surrogate,Chlorination,complete,GSHLVEALJ,30634,3962,r69
+GSHLVEALY,9,charge_surrogate,Chlorination,complete,GSHLVEALJ,30634,3962,r69
+GSHLVEALYL,10,native,Chlorination,complete,GSHLVEALJL,6837,1770,r70
+GSHLVEALYL,10,naive_surrogate,Chlorination,complete,GSHLVEALJL,6837,1770,r70
+GSHLVEALYL,10,charge_surrogate,Chlorination,complete,GSHLVEALJL,6837,1770,r70
+SHLVEALYL,9,native,Chlorination,complete,SHLVEALJL,445,257,r71
+SHLVEALYL,9,naive_surrogate,Chlorination,complete,SHLVEALJL,445,257,r71
+SHLVEALYL,9,charge_surrogate,Chlorination,complete,SHLVEALJL,445,257,r71
+SHLVEALYLV,10,native,Chlorination,complete,SHLVEALJLV,1066,2153,r72
+SHLVEALYLV,10,naive_surrogate,Chlorination,complete,SHLVEALJLV,1066,2153,r72
+SHLVEALYLV,10,charge_surrogate,Chlorination,complete,SHLVEALJLV,1066,2153,r72
+HLVEALYLV,9,native,Chlorination,complete,HLVEALJLV,55,134,r73
+HLVEALYLV,9,naive_surrogate,Chlorination,complete,HLVEALJLV,55,134,r73
+HLVEALYLV,9,charge_surrogate,Chlorination,complete,HLVEALJLV,55,134,r73
+HLVEALYLVC,10,native,Chlorination,complete,HLVEALJLVC,2132,692,r74
+HLVEALYLVC,10,naive_surrogate,Chlorination,complete,HLVEALJLVC,2132,692,r74
+HLVEALYLVC,10,charge_surrogate,Chlorination,complete,HLVEALJLVC,2132,692,r74
+LVEALYLVC,9,native,Chlorination,complete,LVEALJLVC,11768,11770,r75
+LVEALYLVC,9,naive_surrogate,Chlorination,complete,LVEALJLVC,11768,11770,r75
+LVEALYLVC,9,charge_surrogate,Chlorination,complete,LVEALJLVC,11768,11770,r75
+LVEALYLVCG,10,native,Chlorination,complete,LVEALJLVCG,15300,23250,r76
+LVEALYLVCG,10,naive_surrogate,Chlorination,complete,LVEALJLVCG,15300,23250,r76
+LVEALYLVCG,10,charge_surrogate,Chlorination,complete,LVEALJLVCG,15300,23250,r76
+VEALYLVCG,9,native,Chlorination,complete,VEALJLVCG,18759,14340,r77
+VEALYLVCG,9,naive_surrogate,Chlorination,complete,VEALJLVCG,18759,14340,r77
+VEALYLVCG,9,charge_surrogate,Chlorination,complete,VEALJLVCG,18759,14340,r77
+VEALYLVCGE,10,native,Chlorination,modified_nonbinder,VEALJLVCGE,,8867,r78
+VEALYLVCGE,10,naive_surrogate,Chlorination,modified_nonbinder,VEALJLVCGE,,8867,r78
+VEALYLVCGE,10,charge_surrogate,Chlorination,modified_nonbinder,VEALJLVCGE,,8867,r78
+EALYLVCGE,9,native,Chlorination,complete,EALJLVCGE,13342,12021,r79
+EALYLVCGE,9,naive_surrogate,Chlorination,complete,EALJLVCGE,13342,12021,r79
+EALYLVCGE,9,charge_surrogate,Chlorination,complete,EALJLVCGE,13342,12021,r79
+EALYLVCGER,10,native,Citrullination,complete,EALYLVCGEU,3100,10069,r80
+EALYLVCGER,10,naive_surrogate,Citrullination,complete,EALYLVCGEU,3100,10069,r80
+EALYLVCGEQ,10,charge_surrogate,Citrullination,complete,EALYLVCGEU,3100,10069,r80
+EALYLVCGER,10,native,Chlorination,complete,EALJLVCGER,8562,10069,r81
+EALYLVCGER,10,naive_surrogate,Chlorination,complete,EALJLVCGER,8562,10069,r81
+EALYLVCGER,10,charge_surrogate,Chlorination,complete,EALJLVCGER,8562,10069,r81
+ALYLVCGER,9,native,Chlorination,complete,ALJLVCGER,2988,1792,r82
+ALYLVCGER,9,naive_surrogate,Chlorination,complete,ALJLVCGER,2988,1792,r82
+ALYLVCGER,9,charge_surrogate,Chlorination,complete,ALJLVCGER,2988,1792,r82
+ALYLVCGER,9,native,Citrullination,complete,ALYLVCGEU,1241,1792,r83
+ALYLVCGER,9,naive_surrogate,Citrullination,complete,ALYLVCGEU,1241,1792,r83
+ALYLVCGEQ,9,charge_surrogate,Citrullination,complete,ALYLVCGEU,1241,1792,r83
+ALYLVCGERG,10,native,Chlorination,complete,ALJLVCGERG,2734,8784,r84
+ALYLVCGERG,10,naive_surrogate,Chlorination,complete,ALJLVCGERG,2734,8784,r84
+ALYLVCGERG,10,charge_surrogate,Chlorination,complete,ALJLVCGERG,2734,8784,r84
+ALYLVCGERG,10,native,Citrullination,complete,ALYLVCGEUG,9076,8784,r85
+ALYLVCGERG,10,naive_surrogate,Citrullination,complete,ALYLVCGEUG,9076,8784,r85
+ALYLVCGEQG,10,charge_surrogate,Citrullination,complete,ALYLVCGEUG,9076,8784,r85
+LYLVCGERG,9,native,Citrullination,complete,LYLVCGEUG,12493,28006,r86
+LYLVCGERG,9,naive_surrogate,Citrullination,complete,LYLVCGEUG,12493,28006,r86
+LYLVCGEQG,9,charge_surrogate,Citrullination,complete,LYLVCGEUG,12493,28006,r86
+LYLVCGERG,9,native,Chlorination,complete,LJLVCGERG,19307,28006,r87
+LYLVCGERG,9,naive_surrogate,Chlorination,complete,LJLVCGERG,19307,28006,r87
+LYLVCGERG,9,charge_surrogate,Chlorination,complete,LJLVCGERG,19307,28006,r87
+LYLVCGERGF,10,native,Chlorination,complete,LJLVCGERGF,14255,13418,r88
+LYLVCGERGF,10,naive_surrogate,Chlorination,complete,LJLVCGERGF,14255,13418,r88
+LYLVCGERGF,10,charge_surrogate,Chlorination,complete,LJLVCGERGF,14255,13418,r88
+LYLVCGERGF,10,native,Citrullination,complete,LYLVCGEUGF,18784,13418,r89
+LYLVCGERGF,10,naive_surrogate,Citrullination,complete,LYLVCGEUGF,18784,13418,r89
+LYLVCGEQGF,10,charge_surrogate,Citrullination,complete,LYLVCGEUGF,18784,13418,r89
+LYLVCGERGF,10,native,Pan oxidation,complete,LYLVBGERGY,35512,13418,r91
+LYLVCGERGY,10,naive_surrogate,Pan oxidation,complete,LYLVBGERGY,35512,13418,r91
+LYLVDGERGY,10,charge_surrogate,Pan oxidation,complete,LYLVBGERGY,35512,13418,r91
+YLVCGERGF,9,native,Chlorination,complete,JLVCGERGF,3163,6742,r92
+YLVCGERGF,9,naive_surrogate,Chlorination,complete,JLVCGERGF,3163,6742,r92
+YLVCGERGF,9,charge_surrogate,Chlorination,complete,JLVCGERGF,3163,6742,r92
+YLVCGERGF,9,native,Pan oxidation,complete,YLVBGERGY,3244,6742,r93
+YLVCGERGY,9,naive_surrogate,Pan oxidation,complete,YLVBGERGY,3244,6742,r93
+YLVDGERGY,9,charge_surrogate,Pan oxidation,complete,YLVBGERGY,3244,6742,r93
+YLVCGERGF,9,native,Citrullination,complete,YLVCGEUGF,11365,6742,r94
+YLVCGERGF,9,naive_surrogate,Citrullination,complete,YLVCGEUGF,11365,6742,r94
+YLVCGEQGF,9,charge_surrogate,Citrullination,complete,YLVCGEUGF,11365,6742,r94
+YLVCGERGFF,10,native,Chlorination,complete,JLVCGERGFF,1690,1399,r96
+YLVCGERGFF,10,naive_surrogate,Chlorination,complete,JLVCGERGFF,1690,1399,r96
+YLVCGERGFF,10,charge_surrogate,Chlorination,complete,JLVCGERGFF,1690,1399,r96
+YLVCGERGFF,10,native,Citrullination,complete,YLVCGEUGFF,2617,1399,r97
+YLVCGERGFF,10,naive_surrogate,Citrullination,complete,YLVCGEUGFF,2617,1399,r97
+YLVCGEQGFF,10,charge_surrogate,Citrullination,complete,YLVCGEUGFF,2617,1399,r97
+YLVCGERGFF,10,native,Pan oxidation,complete,YLVBGERGYY,2421,1399,r99
+YLVCGERGYY,10,naive_surrogate,Pan oxidation,complete,YLVBGERGYY,2421,1399,r99
+YLVDGERGYY,10,charge_surrogate,Pan oxidation,complete,YLVBGERGYY,2421,1399,r99
+LVCGERGFF,9,native,Citrullination,both_nonbinder,LVCGEUGFF,,,r100
+LVCGERGFF,9,naive_surrogate,Citrullination,both_nonbinder,LVCGEUGFF,,,r100
+LVCGEQGFF,9,charge_surrogate,Citrullination,both_nonbinder,LVCGEUGFF,,,r100
+LVCGERGFF,9,native,Pan oxidation,both_nonbinder,LVBGERGYY,,,r102
+LVCGERGYY,9,naive_surrogate,Pan oxidation,both_nonbinder,LVBGERGYY,,,r102
+LVDGERGYY,9,charge_surrogate,Pan oxidation,both_nonbinder,LVBGERGYY,,,r102
+LVCGERGFFY,10,native,Chlorination,complete,LVCGERGFFJ,27675,23164,r103
+LVCGERGFFY,10,naive_surrogate,Chlorination,complete,LVCGERGFFJ,27675,23164,r103
+LVCGERGFFY,10,charge_surrogate,Chlorination,complete,LVCGERGFFJ,27675,23164,r103
+LVCGERGFFY,10,native,Citrullination,modified_nonbinder,LVCGEUGFFY,,23164,r104
+LVCGERGFFY,10,naive_surrogate,Citrullination,modified_nonbinder,LVCGEUGFFY,,23164,r104
+LVCGEQGFFY,10,charge_surrogate,Citrullination,modified_nonbinder,LVCGEUGFFY,,23164,r104
+LVCGERGFFY,10,native,Pan oxidation,modified_nonbinder,LVBGERGYYY,,23164,r106
+LVCGERGYYY,10,naive_surrogate,Pan oxidation,modified_nonbinder,LVBGERGYYY,,23164,r106
+LVDGERGYYY,10,charge_surrogate,Pan oxidation,modified_nonbinder,LVBGERGYYY,,23164,r106
+VCGERGFFY,9,native,Chlorination,both_nonbinder,VCGERGFFJ,,,r107
+VCGERGFFY,9,naive_surrogate,Chlorination,both_nonbinder,VCGERGFFJ,,,r107
+VCGERGFFY,9,charge_surrogate,Chlorination,both_nonbinder,VCGERGFFJ,,,r107
+VCGERGFFY,9,native,Citrullination,native_nonbinder,VCGEUGFFY,33476,,r108
+VCGERGFFY,9,naive_surrogate,Citrullination,native_nonbinder,VCGEUGFFY,33476,,r108
+VCGEQGFFY,9,charge_surrogate,Citrullination,native_nonbinder,VCGEUGFFY,33476,,r108
+VCGERGFFY,9,native,Pan oxidation,both_nonbinder,VBGERGYYY,,,r110
+VCGERGYYY,9,naive_surrogate,Pan oxidation,both_nonbinder,VBGERGYYY,,,r110
+VDGERGYYY,9,charge_surrogate,Pan oxidation,both_nonbinder,VBGERGYYY,,,r110
+VCGERGFFYT,10,native,Chlorination,both_nonbinder,VCGERGFFJT,,,r111
+VCGERGFFYT,10,naive_surrogate,Chlorination,both_nonbinder,VCGERGFFJT,,,r111
+VCGERGFFYT,10,charge_surrogate,Chlorination,both_nonbinder,VCGERGFFJT,,,r111
+VCGERGFFYT,10,native,Citrullination,both_nonbinder,VCGEUGFFYT,,,r112
+VCGERGFFYT,10,naive_surrogate,Citrullination,both_nonbinder,VCGEUGFFYT,,,r112
+VCGEQGFFYT,10,charge_surrogate,Citrullination,both_nonbinder,VCGEUGFFYT,,,r112
+VCGERGFFYT,10,native,Pan oxidation,both_nonbinder,VBGERGYYYT,,,r114
+VCGERGYYYT,10,naive_surrogate,Pan oxidation,both_nonbinder,VBGERGYYYT,,,r114
+VDGERGYYYT,10,charge_surrogate,Pan oxidation,both_nonbinder,VBGERGYYYT,,,r114
+CGERGFFYT,9,native,Chlorination,native_nonbinder,CGERGFFJT,38400,,r115
+CGERGFFYT,9,naive_surrogate,Chlorination,native_nonbinder,CGERGFFJT,38400,,r115
+CGERGFFYT,9,charge_surrogate,Chlorination,native_nonbinder,CGERGFFJT,38400,,r115
+CGERGFFYT,9,native,Citrullination,both_nonbinder,CGEUGFFYT,,,r116
+CGERGFFYT,9,naive_surrogate,Citrullination,both_nonbinder,CGEUGFFYT,,,r116
+CGEQGFFYT,9,charge_surrogate,Citrullination,both_nonbinder,CGEUGFFYT,,,r116
+CGERGFFYT,9,native,Pan oxidation,both_nonbinder,BGERGYYYT,,,r118
+CGERGYYYT,9,naive_surrogate,Pan oxidation,both_nonbinder,BGERGYYYT,,,r118
+DGERGYYYT,9,charge_surrogate,Pan oxidation,both_nonbinder,BGERGYYYT,,,r118
+CGERGFFYTP,10,native,Chlorination,native_nonbinder,CGERGFFJTP,27807,,r119
+CGERGFFYTP,10,naive_surrogate,Chlorination,native_nonbinder,CGERGFFJTP,27807,,r119
+CGERGFFYTP,10,charge_surrogate,Chlorination,native_nonbinder,CGERGFFJTP,27807,,r119
+CGERGFFYTP,10,native,Citrullination,both_nonbinder,CGEUGFFYTP,,,r120
+CGERGFFYTP,10,naive_surrogate,Citrullination,both_nonbinder,CGEUGFFYTP,,,r120
+CGEQGFFYTP,10,charge_surrogate,Citrullination,both_nonbinder,CGEUGFFYTP,,,r120
+CGERGFFYTP,10,native,Pan oxidation,both_nonbinder,BGERGYYYTP,,,r122
+CGERGYYYTP,10,naive_surrogate,Pan oxidation,both_nonbinder,BGERGYYYTP,,,r122
+DGERGYYYTP,10,charge_surrogate,Pan oxidation,both_nonbinder,BGERGYYYTP,,,r122
+GERGFFYTP,9,native,Chlorination,both_nonbinder,GERGFFJTP,,,r123
+GERGFFYTP,9,naive_surrogate,Chlorination,both_nonbinder,GERGFFJTP,,,r123
+GERGFFYTP,9,charge_surrogate,Chlorination,both_nonbinder,GERGFFJTP,,,r123
+GERGFFYTP,9,native,Citrullination,both_nonbinder,GEUGFFYTP,,,r124
+GERGFFYTP,9,naive_surrogate,Citrullination,both_nonbinder,GEUGFFYTP,,,r124
+GEQGFFYTP,9,charge_surrogate,Citrullination,both_nonbinder,GEUGFFYTP,,,r124
+GERGFFYTPK,10,native,Chlorination,both_nonbinder,GERGFFJTPK,,,r127
+GERGFFYTPK,10,naive_surrogate,Chlorination,both_nonbinder,GERGFFJTPK,,,r127
+GERGFFYTPK,10,charge_surrogate,Chlorination,both_nonbinder,GERGFFJTPK,,,r127
+GERGFFYTPK,10,native,Citrullination,both_nonbinder,GEUGFFYTPK,,,r128
+GERGFFYTPK,10,naive_surrogate,Citrullination,both_nonbinder,GEUGFFYTPK,,,r128
+GEQGFFYTPK,10,charge_surrogate,Citrullination,both_nonbinder,GEUGFFYTPK,,,r128
+ERGFFYTPK,9,native,Chlorination,both_nonbinder,ERGFFJTPK,,,r131
+ERGFFYTPK,9,naive_surrogate,Chlorination,both_nonbinder,ERGFFJTPK,,,r131
+ERGFFYTPK,9,charge_surrogate,Chlorination,both_nonbinder,ERGFFJTPK,,,r131
+ERGFFYTPK,9,native,Citrullination,native_nonbinder,EUGFFYTPK,38093,,r132
+ERGFFYTPK,9,naive_surrogate,Citrullination,native_nonbinder,EUGFFYTPK,38093,,r132
+EQGFFYTPK,9,charge_surrogate,Citrullination,native_nonbinder,EUGFFYTPK,38093,,r132
+ERGFFYTPKT,10,native,Chlorination,both_nonbinder,ERGFFJTPKT,,,r136
+ERGFFYTPKT,10,naive_surrogate,Chlorination,both_nonbinder,ERGFFJTPKT,,,r136
+ERGFFYTPKT,10,charge_surrogate,Chlorination,both_nonbinder,ERGFFJTPKT,,,r136
+ERGFFYTPKT,10,native,Citrullination,native_nonbinder,EUGFFYTPKT,36308,,r137
+ERGFFYTPKT,10,naive_surrogate,Citrullination,native_nonbinder,EUGFFYTPKT,36308,,r137
+EQGFFYTPKT,10,charge_surrogate,Citrullination,native_nonbinder,EUGFFYTPKT,36308,,r137
+RGFFYTPKT,9,native,Chlorination,both_nonbinder,RGFFJTPKT,,,r140
+RGFFYTPKT,9,naive_surrogate,Chlorination,both_nonbinder,RGFFJTPKT,,,r140
+RGFFYTPKT,9,charge_surrogate,Chlorination,both_nonbinder,RGFFJTPKT,,,r140
+RGFFYTPKT,9,native,Citrullination,native_nonbinder,UGFFYTPKT,27300,,r141
+RGFFYTPKT,9,naive_surrogate,Citrullination,native_nonbinder,UGFFYTPKT,27300,,r141
+QGFFYTPKT,9,charge_surrogate,Citrullination,native_nonbinder,UGFFYTPKT,27300,,r141
+RGFFYTPKTR,10,native,Citrullination,both_nonbinder,UGFFYTPKTU,,,r143
+RGFFYTPKTR,10,naive_surrogate,Citrullination,both_nonbinder,UGFFYTPKTU,,,r143
+QGFFYTPKTQ,10,charge_surrogate,Citrullination,both_nonbinder,UGFFYTPKTU,,,r143
+GFFYTPKTR,9,native,Citrullination,complete,GFFYTPKTU,38420,12176,r144
+GFFYTPKTR,9,naive_surrogate,Citrullination,complete,GFFYTPKTU,38420,12176,r144
+GFFYTPKTQ,9,charge_surrogate,Citrullination,complete,GFFYTPKTU,38420,12176,r144
+GFFYTPKTRR,10,native,Citrullination,both_nonbinder,GFFYTPKTUU,,,r145
+GFFYTPKTRR,10,naive_surrogate,Citrullination,both_nonbinder,GFFYTPKTUU,,,r145
+GFFYTPKTQQ,10,charge_surrogate,Citrullination,both_nonbinder,GFFYTPKTUU,,,r145
+FFYTPKTRR,9,native,Citrullination,both_nonbinder,FFYTPKTUU,,,r146
+FFYTPKTRR,9,naive_surrogate,Citrullination,both_nonbinder,FFYTPKTUU,,,r146
+FFYTPKTQQ,9,charge_surrogate,Citrullination,both_nonbinder,FFYTPKTUU,,,r146
+FFYTPKTRRE,10,native,Citrullination,native_nonbinder,FFYTPKTUUE,28285,,r147
+FFYTPKTRRE,10,naive_surrogate,Citrullination,native_nonbinder,FFYTPKTUUE,28285,,r147
+FFYTPKTQQE,10,charge_surrogate,Citrullination,native_nonbinder,FFYTPKTUUE,28285,,r147
+FYTPKTRRE,9,native,Citrullination,both_nonbinder,FYTPKTUUE,,,r148
+FYTPKTRRE,9,naive_surrogate,Citrullination,both_nonbinder,FYTPKTUUE,,,r148
+FYTPKTQQE,9,charge_surrogate,Citrullination,both_nonbinder,FYTPKTUUE,,,r148
+FYTPKTRREA,10,native,Citrullination,both_nonbinder,FYTPKTUUEA,,,r149
+FYTPKTRREA,10,naive_surrogate,Citrullination,both_nonbinder,FYTPKTUUEA,,,r149
+FYTPKTQQEA,10,charge_surrogate,Citrullination,both_nonbinder,FYTPKTUUEA,,,r149
+YTPKTRREA,9,native,Citrullination,native_nonbinder,YTPKTUUEA,34672,,r150
+YTPKTRREA,9,naive_surrogate,Citrullination,native_nonbinder,YTPKTUUEA,34672,,r150
+YTPKTQQEA,9,charge_surrogate,Citrullination,native_nonbinder,YTPKTUUEA,34672,,r150
+YTPKTRREAE,10,native,Citrullination,both_nonbinder,YTPKTUUEAE,,,r151
+YTPKTRREAE,10,naive_surrogate,Citrullination,both_nonbinder,YTPKTUUEAE,,,r151
+YTPKTQQEAE,10,charge_surrogate,Citrullination,both_nonbinder,YTPKTUUEAE,,,r151
+TPKTRREAE,9,native,Citrullination,both_nonbinder,TPKTUUEAE,,,r152
+TPKTRREAE,9,naive_surrogate,Citrullination,both_nonbinder,TPKTUUEAE,,,r152
+TPKTQQEAE,9,charge_surrogate,Citrullination,both_nonbinder,TPKTUUEAE,,,r152
+TPKTRREAED,10,native,Citrullination,both_nonbinder,TPKTUUEAED,,,r153
+TPKTRREAED,10,naive_surrogate,Citrullination,both_nonbinder,TPKTUUEAED,,,r153
+TPKTQQEAED,10,charge_surrogate,Citrullination,both_nonbinder,TPKTUUEAED,,,r153
+PKTRREAED,9,native,Citrullination,both_nonbinder,PKTUUEAED,,,r154
+PKTRREAED,9,naive_surrogate,Citrullination,both_nonbinder,PKTUUEAED,,,r154
+PKTQQEAED,9,charge_surrogate,Citrullination,both_nonbinder,PKTUUEAED,,,r154
+PKTRREAEDL,10,native,Citrullination,both_nonbinder,PKTUUEAEDL,,,r155
+PKTRREAEDL,10,naive_surrogate,Citrullination,both_nonbinder,PKTUUEAEDL,,,r155
+PKTQQEAEDL,10,charge_surrogate,Citrullination,both_nonbinder,PKTUUEAEDL,,,r155
+KTRREAEDL,9,native,Citrullination,both_nonbinder,KTUUEAEDL,,,r156
+KTRREAEDL,9,naive_surrogate,Citrullination,both_nonbinder,KTUUEAEDL,,,r156
+KTQQEAEDL,9,charge_surrogate,Citrullination,both_nonbinder,KTUUEAEDL,,,r156
+KTRREAEDLQ,10,native,Citrullination,native_nonbinder,KTUUEAEDLQ,22304,,r157
+KTRREAEDLQ,10,naive_surrogate,Citrullination,native_nonbinder,KTUUEAEDLQ,22304,,r157
+KTQQEAEDLQ,10,charge_surrogate,Citrullination,native_nonbinder,KTUUEAEDLQ,22304,,r157
+TRREAEDLQ,9,native,Citrullination,both_nonbinder,TUUEAEDLQ,,,r158
+TRREAEDLQ,9,naive_surrogate,Citrullination,both_nonbinder,TUUEAEDLQ,,,r158
+TQQEAEDLQ,9,charge_surrogate,Citrullination,both_nonbinder,TUUEAEDLQ,,,r158
+TRREAEDLQV,10,native,Citrullination,native_nonbinder,TUUEAEDLQV,30243,,r159
+TRREAEDLQV,10,naive_surrogate,Citrullination,native_nonbinder,TUUEAEDLQV,30243,,r159
+TQQEAEDLQV,10,charge_surrogate,Citrullination,native_nonbinder,TUUEAEDLQV,30243,,r159
+RREAEDLQV,9,native,Citrullination,both_nonbinder,UUEAEDLQV,,,r160
+RREAEDLQV,9,naive_surrogate,Citrullination,both_nonbinder,UUEAEDLQV,,,r160
+QQEAEDLQV,9,charge_surrogate,Citrullination,both_nonbinder,UUEAEDLQV,,,r160
+RREAEDLQVG,10,native,Citrullination,both_nonbinder,UUEAEDLQVG,,,r161
+RREAEDLQVG,10,naive_surrogate,Citrullination,both_nonbinder,UUEAEDLQVG,,,r161
+QQEAEDLQVG,10,charge_surrogate,Citrullination,both_nonbinder,UUEAEDLQVG,,,r161
+REAEDLQVG,9,native,Citrullination,both_nonbinder,UEAEDLQVG,,,r162
+REAEDLQVG,9,naive_surrogate,Citrullination,both_nonbinder,UEAEDLQVG,,,r162
+QEAEDLQVG,9,charge_surrogate,Citrullination,both_nonbinder,UEAEDLQVG,,,r162
+REAEDLQVGQ,10,native,Citrullination,modified_nonbinder,UEAEDLQVGQ,,23725,r163
+REAEDLQVGQ,10,naive_surrogate,Citrullination,modified_nonbinder,UEAEDLQVGQ,,23725,r163
+QEAEDLQVGQ,10,charge_surrogate,Citrullination,modified_nonbinder,UEAEDLQVGQ,,23725,r163
+LALEGSLQKR,10,native,Citrullination,native_nonbinder,LALEGSLQKU,16354,,r164
+LALEGSLQKR,10,naive_surrogate,Citrullination,native_nonbinder,LALEGSLQKU,16354,,r164
+LALEGSLQKQ,10,charge_surrogate,Citrullination,native_nonbinder,LALEGSLQKU,16354,,r164
+ALEGSLQKR,9,native,Citrullination,both_nonbinder,ALEGSLQKU,,,r165
+ALEGSLQKR,9,naive_surrogate,Citrullination,both_nonbinder,ALEGSLQKU,,,r165
+ALEGSLQKQ,9,charge_surrogate,Citrullination,both_nonbinder,ALEGSLQKU,,,r165
+ALEGSLQKRG,10,native,Citrullination,both_nonbinder,ALEGSLQKUG,,,r166
+ALEGSLQKRG,10,naive_surrogate,Citrullination,both_nonbinder,ALEGSLQKUG,,,r166
+ALEGSLQKQG,10,charge_surrogate,Citrullination,both_nonbinder,ALEGSLQKUG,,,r166
+LEGSLQKRG,9,native,Citrullination,both_nonbinder,LEGSLQKUG,,,r167
+LEGSLQKRG,9,naive_surrogate,Citrullination,both_nonbinder,LEGSLQKUG,,,r167
+LEGSLQKQG,9,charge_surrogate,Citrullination,both_nonbinder,LEGSLQKUG,,,r167
+LEGSLQKRGI,10,native,Citrullination,both_nonbinder,LEGSLQKUGI,,,r168
+LEGSLQKRGI,10,naive_surrogate,Citrullination,both_nonbinder,LEGSLQKUGI,,,r168
+LEGSLQKQGI,10,charge_surrogate,Citrullination,both_nonbinder,LEGSLQKUGI,,,r168
+EGSLQKRGI,9,native,Citrullination,both_nonbinder,EGSLQKUGI,,,r169
+EGSLQKRGI,9,naive_surrogate,Citrullination,both_nonbinder,EGSLQKUGI,,,r169
+EGSLQKQGI,9,charge_surrogate,Citrullination,both_nonbinder,EGSLQKUGI,,,r169
+EGSLQKRGIV,10,native,Citrullination,both_nonbinder,EGSLQKUGIV,,,r170
+EGSLQKRGIV,10,naive_surrogate,Citrullination,both_nonbinder,EGSLQKUGIV,,,r170
+EGSLQKQGIV,10,charge_surrogate,Citrullination,both_nonbinder,EGSLQKUGIV,,,r170
+GSLQKRGIV,9,native,Citrullination,modified_nonbinder,GSLQKUGIV,,32748,r171
+GSLQKRGIV,9,naive_surrogate,Citrullination,modified_nonbinder,GSLQKUGIV,,32748,r171
+GSLQKQGIV,9,charge_surrogate,Citrullination,modified_nonbinder,GSLQKUGIV,,32748,r171
+GSLQKRGIVE,10,native,Citrullination,native_nonbinder,GSLQKUGIVE,34549,,r172
+GSLQKRGIVE,10,naive_surrogate,Citrullination,native_nonbinder,GSLQKUGIVE,34549,,r172
+GSLQKQGIVE,10,charge_surrogate,Citrullination,native_nonbinder,GSLQKUGIVE,34549,,r172
+SLQKRGIVE,9,native,Citrullination,modified_nonbinder,SLQKUGIVE,,5952,r173
+SLQKRGIVE,9,naive_surrogate,Citrullination,modified_nonbinder,SLQKUGIVE,,5952,r173
+SLQKQGIVE,9,charge_surrogate,Citrullination,modified_nonbinder,SLQKUGIVE,,5952,r173
+SLQKRGIVEQ,10,native,Citrullination,both_nonbinder,SLQKUGIVEQ,,,r174
+SLQKRGIVEQ,10,naive_surrogate,Citrullination,both_nonbinder,SLQKUGIVEQ,,,r174
+SLQKQGIVEQ,10,charge_surrogate,Citrullination,both_nonbinder,SLQKUGIVEQ,,,r174
+LQKRGIVEQ,9,native,Citrullination,both_nonbinder,LQKUGIVEQ,,,r175
+LQKRGIVEQ,9,naive_surrogate,Citrullination,both_nonbinder,LQKUGIVEQ,,,r175
+LQKQGIVEQ,9,charge_surrogate,Citrullination,both_nonbinder,LQKUGIVEQ,,,r175
+LQKRGIVEQC,10,native,Citrullination,both_nonbinder,LQKUGIVEQC,,,r176
+LQKRGIVEQC,10,naive_surrogate,Citrullination,both_nonbinder,LQKUGIVEQC,,,r176
+LQKQGIVEQC,10,charge_surrogate,Citrullination,both_nonbinder,LQKUGIVEQC,,,r176
+QKRGIVEQC,9,native,Citrullination,both_nonbinder,QKUGIVEQC,,,r177
+QKRGIVEQC,9,naive_surrogate,Citrullination,both_nonbinder,QKUGIVEQC,,,r177
+QKQGIVEQC,9,charge_surrogate,Citrullination,both_nonbinder,QKUGIVEQC,,,r177
+QKRGIVEQCC,10,native,Citrullination,both_nonbinder,QKUGIVEQCC,,,r178
+QKRGIVEQCC,10,naive_surrogate,Citrullination,both_nonbinder,QKUGIVEQCC,,,r178
+QKQGIVEQCC,10,charge_surrogate,Citrullination,both_nonbinder,QKUGIVEQCC,,,r178
+KRGIVEQCC,9,native,Citrullination,both_nonbinder,KUGIVEQCC,,,r179
+KRGIVEQCC,9,naive_surrogate,Citrullination,both_nonbinder,KUGIVEQCC,,,r179
+KQGIVEQCC,9,charge_surrogate,Citrullination,both_nonbinder,KUGIVEQCC,,,r179
+KRGIVEQCCT,10,native,Citrullination,both_nonbinder,KUGIVEQCCT,,,r180
+KRGIVEQCCT,10,naive_surrogate,Citrullination,both_nonbinder,KUGIVEQCCT,,,r180
+KQGIVEQCCT,10,charge_surrogate,Citrullination,both_nonbinder,KUGIVEQCCT,,,r180
+RGIVEQCCT,9,native,Citrullination,both_nonbinder,UGIVEQCCT,,,r181
+RGIVEQCCT,9,naive_surrogate,Citrullination,both_nonbinder,UGIVEQCCT,,,r181
+QGIVEQCCT,9,charge_surrogate,Citrullination,both_nonbinder,UGIVEQCCT,,,r181
+RGIVEQCCTS,10,native,Citrullination,both_nonbinder,UGIVEQCCTS,,,r182
+RGIVEQCCTS,10,naive_surrogate,Citrullination,both_nonbinder,UGIVEQCCTS,,,r182
+QGIVEQCCTS,10,charge_surrogate,Citrullination,both_nonbinder,UGIVEQCCTS,,,r182

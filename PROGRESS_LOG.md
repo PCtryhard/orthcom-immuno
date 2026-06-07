@@ -211,3 +211,42 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
 - **No predictions, no Psi4.** Awaiting: (a) human installs tcsh; (b) approval of the ~360 MB download;
   then I install + configure and show the exact run command + a 3-row formatted-input sample for
   review before any prediction.
+
+## 2026-06-07 — Step 2 RUN: surrogate predictions generated (NetMHCpan-4.1 EL+BA)
+- **Install completed.** IEDB MHC-I standalone unpacked to **`/home/max/mhc_i`** (WSL-native, NOT
+  vendored in git). `./configure` first failed (Ubuntu 24.04 has `python3` but no `python`, and the
+  configure shebang is `#!/usr/bin/env python`) → ran `python3 src/configure.py` = "successfully
+  installed". `netmhcpan-4.1-executable` + EL & BA percentile-data present.
+- **Input built** by `src/build_surrogate_input.py`: 154 testable rows → per-row `native` /
+  `naive_surrogate` (U→Arg, B→Cys) / `charge_surrogate` (U→Gln, B→Asp), each passed through
+  `src/seq_guard.py` (HALT on any leftover U/J/B/O/Z/X; all 462 passed). Outputs in `results/step2/`:
+  `input_{9,10}mers.fasta`, **`input_peptides.txt` (209 unique peptides)**, `input_manifest.csv`
+  (peptide → row/variant/measured-IC50).
+- **CORE FRAMING (as requested).** For **135 of the 154 testable rows the naive parent-map surrogate
+  reconstructs the *native* peptide** (citrulline→Arg, chlorotyrosine→Tyr, cysteic acid→Cys,
+  oxo-His→His all revert to the native residue). For those rows the field's naive surrogate is
+  **mathematically equivalent to predicting "the modification has no effect"** — the predictor is
+  handed the native sequence and is structurally blind to the PTM. **That is the core thing Step 2
+  measures.** The **19 exceptions are partial-modeling cases**: deamidation (O/Z → the canonical
+  product Asp/Glu, ≠ native Asn/Gln) and pan-oxidation peptides whose Phe→Tyr (`F→Y` is canonical and
+  kept, so the surrogate models that part but not the C→cysteic-acid / His→oxo-His parts).
+- **Predictor HANG — debugged.** The IEDB **`predict_binding.py` Python wrapper hangs (>1 h)** and —
+  confirmed via `ps` — **never spawns the netMHCpan binary** (Python blocked, load 0.00). Ruled out:
+  drvfs (`/mnt/c` read = 12 ms; hang reproduces fully WSL-native), peptide count (3 peptides also
+  hang), CPU contention / stale lock (system idle, no leftover procs; netMHCpan uses per-run
+  `mkdtemp`). The **netMHCpan-4.1 binary itself is fine** — invoked directly in `-p` (peptide-list)
+  mode it did **all 209 peptides in ~1 s**.
+- **FIX = call the binary directly** via `src/run_netmhcpan.sh`:
+  `netMHCpan -p -BA -a HLA-A02:01 -f input_peptides.txt`. Identical NetMHCpan-4.1 EL+BA model; one
+  model load; mixed 9/10-mers in one list. `-BA` puts **both heads in one file** →
+  `results/step2/pred_netmhcpan_el_ba_raw.txt` (209 rows; 4 strong + 11 weak binders). Columns:
+  `Score_EL Rnk_EL` (presentation head) and `Score_BA Rnk_BA Aff(nM)` — **`Aff(nM)` = predicted IC50**
+  for the predicted-vs-measured regression. (Sanity: citrulline naive surrogate `ALWMRLLPL` (=native)
+  → 12.79 nM; charge-aware `ALWMQLLPL` → 11.44 nM.)
+- **Note vs the originally-named wrapper.** Same NetMHCpan-4.1 model; the binary reports its own native
+  %rank (≈ the IEDB percentile-data %rank). The wrapper is simply unusable (hangs).
+- **Gotcha logged.** Invoking the WSL command from git-bash needs `MSYS_NO_PATHCONV=1`, else git-bash
+  rewrites `/home/...` arguments into `C:\Program Files\Git\...`.
+- **STOP — no parsing/analysis yet, no Psi4.** Next gate: join predictions to `input_manifest.csv`
+  (predicted `Aff(nM)` / EL-rank vs measured IC50) for the **48 regression + 32 classification** rows,
+  reported under the naive-parent-map vs charge-aware labels.

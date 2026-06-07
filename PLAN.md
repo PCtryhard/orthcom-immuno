@@ -134,6 +134,13 @@ residues run **both** and label honestly — citrulline `U`: *naive parent-map* 
 = Gln; cysteic acid `B`: *naive parent-map* = Cys, *charge-aware* = Asp. The **naive parent-map is
 the field-as-practiced baseline**; report both, never only the charge-aware version (that would
 flatter the surrogate). Unambiguous single maps: `J→Y`, `X→H`, `O→D`, `Z→E`.
+**Predictor (run 2026-06-07):** the IEDB `predict_binding.py` wrapper hangs (>1 h, never spawns the
+binary); use the bundled **NetMHCpan-4.1 binary directly** via `src/run_netmhcpan.sh` —
+`netMHCpan -p -BA -a HLA-A02:01` (one model load; EL+BA in one output; `Aff(nM)` = predicted IC50).
+209 native/surrogate peptides predicted in ~1 s → `results/step2/pred_netmhcpan_el_ba_raw.txt`.
+**Core result framing:** for 135/154 testable rows the naive parent-map surrogate *is* the native
+sequence, so the naive surrogate ≡ "predict the modification has no effect"; 19 exceptions
+(deamidation, pan-ox `F→Y`) are partial-modeling. Parsing → `results/surrogate_baseline.csv` is next.
 
 ### Step 3 — Structure-based pilot (the real go/no-go)  `TODO`
 Pick ONE well-characterized PTM case. Build the modified pMHC-A\*02:01 complex from a solved
