@@ -250,3 +250,30 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
 - **STOP — no parsing/analysis yet, no Psi4.** Next gate: join predictions to `input_manifest.csv`
   (predicted `Aff(nM)` / EL-rank vs measured IC50) for the **48 regression + 32 classification** rows,
   reported under the naive-parent-map vs charge-aware labels.
+
+## 2026-06-07 — Step 2 PARSE: predicted-vs-measured joined table (no stats yet)
+- **What.** `src/parse_surrogate_baseline.py` joins `pred_netmhcpan_el_ba_raw.txt` → `input_manifest.csv`
+  → measured modified IC50, emitting **`results/step2/surrogate_vs_measured.csv` (308 rows)**: one row
+  per (testable source row × surrogate scheme {naive_parent_map, charge_aware}) with the scheme's
+  surrogate peptide, its predicted `Aff(nM)`/EL-score/EL-rank, the predicted native `Aff(nM)` (context),
+  the measured modified IC50, and a per-row surrogate error
+  `log10_resid = log10(pred_Aff) − log10(measured)`.
+- **Why.** The per-row residual (in log space) IS the surrogate error; split by scheme so the field's
+  *naive parent-map* baseline and the *charge-aware* refinement are reported separately.
+- **Join integrity (both failure modes guarded).**
+  - Keyed on the **exact peptide sequence** (netMHCpan `Peptide` column, not `Core`), via a dict — so
+    9-mers and 10-mers cannot collide (key lengths present = {9,10}).
+  - **154 source rows IN → 308 comparison rows OUT** (×2 schemes); every surrogate peptide found in the
+    209 predictions (0 missing); all 209 predictions used.
+  - **Many-to-one is by design and does NOT collapse rows:** 43 surrogate sequences are shared by >1
+    source row (e.g. `FVNQHLCGS` ← r14, r18 — two different modifications of the same native), each
+    attached to the same prediction while keeping both source rows distinct. No cross-join.
+- **Censoring (special handling).** 186 of 308 rows have a non-binder modified peptide (IC50 > 40,000
+  nM) → `measured_modified` carries the literal flag **`>40000`**, never coerced to a number;
+  `log10_resid` left **blank**. 122 rows have a numeric measured modified IC50 (complete 48×2 +
+  native_nonbinder 13×2) → residual computed.
+- **Scheme divergence.** naive vs charge differ only for the **107** rows containing U (citrulline) or
+  B (cysteic acid); they **coincide for 47** rows (deamidation O/Z, chlorination J, oxo-His X — same
+  map in both schemes), where the two scheme rows are identical apart from the label.
+- **No summary statistic computed** (no Spearman, no classification) — table only. **STOP for human
+  review of the joined table.** No Psi4.

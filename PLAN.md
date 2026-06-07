@@ -141,6 +141,12 @@ binary); use the bundled **NetMHCpan-4.1 binary directly** via `src/run_netmhcpa
 **Core result framing:** for 135/154 testable rows the naive parent-map surrogate *is* the native
 sequence, so the naive surrogate ≡ "predict the modification has no effect"; 19 exceptions
 (deamidation, pan-ox `F→Y`) are partial-modeling. Parsing → `results/surrogate_baseline.csv` is next.
+**Parse (2026-06-07):** `src/parse_surrogate_baseline.py` → `results/step2/surrogate_vs_measured.csv`
+(308 rows = 154 testable × {naive_parent_map, charge_aware}): predicted `Aff(nM)`/EL-rank vs measured
+modified IC50 + per-row `log10_resid`; censored (>40,000 nM) rows carried as a `>40000` flag, never
+coerced. Join verified — 154→308, exact-peptide key, no collapse/cross-join, 0 missing. **Summary
+stats (Spearman in log space; binder/non-binder classification on the 186 censored rows) are the next
+gate** → `results/surrogate_baseline.csv`.
 
 ### Step 3 — Structure-based pilot (the real go/no-go)  `TODO`
 Pick ONE well-characterized PTM case. Build the modified pMHC-A\*02:01 complex from a solved
