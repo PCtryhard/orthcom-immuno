@@ -81,6 +81,12 @@ committed builders (`prep_ligand.py`, `prep_ligand_2nal.py`); (c) the builders' 
 SHA-1 self-checks pass. The `git hash-object` values `ee44ce78` (L4F) and `fc4bdc78` (PHE) match
 the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7…`.
 
+> **The two 2-Nal hashes are different hash types over different objects — not a contradiction.**
+> `f1f6ede6…` (the value in the table) is the **`git hash-object` of the file blob** — git-SHA-1
+> over the PDB's bytes including git's blob header — whereas `ac9f19f7…` is the **builder's
+> internal raw-SHA-1 self-check over its generated coordinate content** — plain SHA-1, no git
+> header. Both are expected, both pass, and neither is in conflict with the other.
+
 | file (in `data/ligands/`) | `git hash-object` (git blob SHA-1)         | SHA-256                                                            |
 | ------------------------- | ------------------------------------------ | ----------------------------------------------------------------- |
 | `ligand_2NAL.pdb`         | `f1f6ede6c33d3edb0b2aa1116d6989aa8ef93ee9` | `25aa6c87be1d836e04e8bcb0740df542cf85915ee6f37892bc59c09998e83e8c` |
