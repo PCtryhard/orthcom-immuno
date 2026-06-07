@@ -54,6 +54,25 @@ fluoro-Phe) on A\*02:01 with measured binding/T-cell data. So the project is sta
 This gives a **validated method** (what reviewers demand) + a **novel predictive extension**
 (what's interesting). The project no longer bets the paper on unmeasurable molecules.
 
+## Dataset statistical shape (Step 1 result — constrains Steps 2–5)
+
+`data/validation/validation_ptm_a0201.csv` (181 HLA-A\*02:01 modified-peptide rows from
+Sidney/Sette 2018 MOESM3) is **mostly censored**, which bounds what later steps can claim.
+Honest accounting (`pair_status` column):
+
+- **`complete` = 50** (both native & modified IC50 numeric). **Continuous predicted-vs-measured
+  IC50 regression runs on these only.** Adequate for a **pilot**; **thin for a strong
+  correlation claim** — do not oversell Spearman ρ at n≈50.
+- **One-sided = 41** (`native_nonbinder` 17 + `modified_nonbinder` 24): **censored at IC50
+  >40,000 nM.** Treat as **binary threshold-crossing classification** (binder ↔ non-binder),
+  **never** regression on the censored bound (that would fabricate an unmeasured value).
+- **`both_nonbinder` = 90**: neither peptide binds → **no quantitative signal**; true-negative
+  context only.
+- **Highest-value subset: the 17 `native_nonbinder` rows** — the modification *creates* binding
+  (native >40,000 → modified measurable). The cleanest **measured ground truth for the thesis**
+  ("a non-canonical modification changes MHC-I presentation"). **Step 4's position analysis
+  should target these threshold-crossing cases specifically.**
+
 ## Assets carried over from OrthCom (one-way import; do not import the rest)
 
 - **Physics stack (now the scientific core, not a deferred tail):** `generate_conformer.py`,
@@ -70,14 +89,14 @@ This gives a **validated method** (what reviewers demand) + a **novel predictive
 
 ## Step-by-step plan
 
-### Step 0 — Repo creation + restructure  `PROMPTED`
+### Step 0 — Repo creation + restructure  `DONE`
 Create a clean new repo `orthcom-immuno`. Import only the carry-over assets above. Write a
 fresh `README.md` and `CLAUDE.md` for the new thesis. Seed `PROGRESS_LOG.md` with the project
 origin, the OrthCom→Immuno pivot rationale, and the carried-over "What didn't work" history.
 **Gate:** show the new tree + both docs before any analysis. Do NOT import or reference the DL
 pipeline. (This is the step the first handoff prompt covers.)
 
-### Step 1 — Pull the validation dataset  `TODO`
+### Step 1 — Pull the validation dataset  `DONE`
 Extract the modified-vs-native IC50 pairs from Sidney/Sette 2018 (PMC5863483): Table 3 + the
 supplementary files (Additional files referenced as MOESM). Need, per peptide: native
 sequence, modified position, modification type (citrullination / deamidation / oxidation /
@@ -86,7 +105,7 @@ Build `data/validation_ptm_a0201.csv`. **Human must spot-check** ~5 rows against
 not trust auto-extraction of numeric tables. **Note:** these exact IC50s were NOT pre-supplied
 by the advisor; they must be read from the paper. Flag any row you're unsure of.
 
-### Step 2 — Reproduce the surrogate baseline  `TODO`
+### Step 2 — Reproduce the surrogate baseline  `PROMPTED`
 For each validation peptide, apply the canonical-surrogate method (replace the modified
 residue with its nearest natural amino acid per Mattei's logic; for the PTM cases use the
 sensible canonical analog, e.g. citrulline→Gln/Arg debate documented explicitly) and predict
@@ -94,6 +113,14 @@ A\*02:01 binding with NetMHCpan-4.1. Record predicted vs. measured IC50. Compute
 correlation (Spearman ρ, and rank-error on the "did the modification increase binding?"
 call). **This is the bar to beat.** Output: `results/surrogate_baseline.csv` + a short
 written summary of the surrogate's error.
+
+**Statistical-shape constraint (see "Dataset statistical shape" above):** run the continuous
+predicted-vs-measured IC50 regression on the **~50 `complete` pairs only** (report ρ as a
+**pilot**, n≈50); treat the **~41 one-sided rows as binary binder/non-binder classification**
+(censored >40,000 nM — never regress the censored bound); **exclude the 90 `both_nonbinder`
+rows** from quantitative scoring. **Gate:** the canonical-surrogate residue mapping is reviewed
+by the human *before* any NetMHCpan run (the mapping is the thing under test — a sloppy mapping
+would strawman the field's method).
 
 ### Step 3 — Structure-based pilot (the real go/no-go)  `TODO`
 Pick ONE well-characterized PTM case. Build the modified pMHC-A\*02:01 complex from a solved
@@ -109,6 +136,8 @@ Run the structure-based method across the full PTM validation set. Then run the 
 sweep**: place the modification at anchor (P2, P9) vs. non-anchor positions and map the
 presentation consequence. Compare against the 2021 prior (anchor mods tend to *abolish*
 binding). Output: the surrogate-error quantification + the position-resolved liability map.
+**Target the 17 `native_nonbinder` threshold-crossing cases (modification *creates* binding)
+specifically — the cleanest measured ground truth for the thesis.**
 
 ### Step 5 — Predictive extension to synthetic ncAAs  `TODO`
 Apply the validated method to 2-Nal and the fluoro-Phe gradient (carried-over ligands) in
