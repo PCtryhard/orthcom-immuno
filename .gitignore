@@ -1,0 +1,27 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# --- Compute scratch / generated (regenerate; don't commit) ---
+*.log
+*.molden
+*.fchk
+timer.dat
+**/_scratch*
+
+# Note: verified inputs and curated datasets ARE tracked on purpose
+#   - data/ligands/*.pdb   (the verified ncAA anchors)
+#   - data/validation/*.csv (the Step-1 PTM IC50 dataset)
+#   - results/*.csv         (Step-2+ scores)
+# If a step emits large/raw intermediates, add a targeted ignore for that exact path here.

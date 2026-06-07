@@ -1,0 +1,11 @@
+# Normalize text to LF in the repo and on checkout (matches inherited OrthCom convention;
+# prevents autocrlf from rewriting line endings on Windows clones).
+* text=auto eol=lf
+
+# Verified ncAA side-chain anchors: frozen artifacts. Treat as binary so git NEVER does
+# EOL conversion — guarantees the recorded git-hash-object / SHA-256 stay valid byte-for-byte
+# on every platform.
+data/ligands/*.pdb -text
+
+# Shell scripts (if any are added later) stay LF.
+*.sh text eol=lf
