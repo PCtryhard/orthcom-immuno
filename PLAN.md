@@ -72,6 +72,14 @@ Honest accounting (`pair_status` column):
   (native >40,000 → modified measurable). The cleanest **measured ground truth for the thesis**
   ("a non-canonical modification changes MHC-I presentation"). **Step 4's position analysis
   should target these threshold-crossing cases specifically.**
+- **Exact-by-construction exclusion (the real surrogate-error test set).** A row can test surrogate
+  error only if its modified sequence still contains a non-canonical code (`U/J/B/O/Z/X`); when the
+  modification yields an all-canonical sequence (oxidation `F→Y`; straight deamidation `N→D`/`Q→E`;
+  Phe-only pan-oxidation) the surrogate **equals** the modified peptide → error ≡ 0 by construction.
+  **27 of 181 rows are exact-by-construction** (Ox-of-F 14, straight deamidation 8, Phe-only
+  pan-ox 5). Net test sets: **regression on 48 of the 50 `complete` pairs**; **binary classification
+  on 32 of the 41 censored one-sided rows** (80 measured rows with a genuine surrogate approximation;
+  the 90 `both_nonbinder` stay excluded). Counts deterministic + self-checked.
 
 ## Assets carried over from OrthCom (one-way import; do not import the rest)
 
@@ -121,6 +129,11 @@ predicted-vs-measured IC50 regression on the **~50 `complete` pairs only** (repo
 rows** from quantitative scoring. **Gate:** the canonical-surrogate residue mapping is reviewed
 by the human *before* any NetMHCpan run (the mapping is the thing under test — a sloppy mapping
 would strawman the field's method).
+**Surrogate labeling (no pre-ranking — test the method as practiced):** for the two debated
+residues run **both** and label honestly — citrulline `U`: *naive parent-map* = Arg, *charge-aware*
+= Gln; cysteic acid `B`: *naive parent-map* = Cys, *charge-aware* = Asp. The **naive parent-map is
+the field-as-practiced baseline**; report both, never only the charge-aware version (that would
+flatter the surrogate). Unambiguous single maps: `J→Y`, `X→H`, `O→D`, `Z→E`.
 
 ### Step 3 — Structure-based pilot (the real go/no-go)  `TODO`
 Pick ONE well-characterized PTM case. Build the modified pMHC-A\*02:01 complex from a solved

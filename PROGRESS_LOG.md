@@ -163,4 +163,25 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
     read exactly; no figure-derived values were used.
 - **Scope.** Dataset assembly only — **no NetMHCpan, no Psi4, no analysis** (Steps 2–3).
 - **Gate.** STOP for human spot-check (≥5 CSV rows vs the PDF/MOESM3) before `PLAN.md` Step 1 →
-  `DONE`. Step-1 changes are staged in the working tree, **not yet committed** (awaiting green-light).
+  `DONE`. *(Resolved: spot-check passed; committed `154b5c1` + PLAN `3ef0247`, pushed; Step 1 `DONE`.)*
+
+## 2026-06-07 — Step 2 prep: surrogate mapping approved + test-set sizing (no run yet)
+- **Approved canonical-surrogate mapping** (the method under test; reviewed before any run):
+  - Citrulline `U`: **naive parent-map → Arg**, **charge-aware → Gln** — run **both**, label honestly,
+    **do NOT pre-rank** (the field practices the naive parent-map; Gln is the biochemical upgrade).
+  - Cysteic acid `B`: **naive parent-map → Cys**, **charge-aware → Asp** (same labeling logic).
+  - Unambiguous single maps: chlorotyrosine `J`→Tyr, oxo-His `X`→His, iso-Asp `O`→Asp, iso-Glu `Z`→Glu.
+  - Oxidized-Met → Met (parent) — **not instantiated** (no Met in any modified peptide here).
+- **Exact-by-construction exclusion (deterministic, self-checked).** A row tests surrogate error only
+  if its modified sequence still holds a non-canonical code (`U/J/B/O/Z/X`); an all-canonical modified
+  sequence ⇒ surrogate ≡ modified ⇒ error ≡ 0. **27 of 181 exact** (Ox-of-F 14, straight deamidation
+  8, Phe-only pan-ox 5). Real test sets: **regression on 48/50 complete pairs**; **binary
+  classification on 32/41 censored one-sided rows** (80 measured rows total carry a real surrogate
+  approximation; 90 `both_nonbinder` excluded). Verified: 27 exact + 154 testable = 181; per-status
+  sums reconcile (complete 2+48=50, native_nb 4+13=17, modified_nb 5+19=24, both_nb 16+74=90).
+- **NetMHCpan-4.1 NOT installed** — absent from git-bash PATH, WSL PATH, and common dirs. **Gate:
+  STOP** — academic license/download flagged to the human (DTU Health Tech; Linux build for WSL). No
+  NetMHCpan run, no Psi4 performed.
+- **Effect.** PLAN "Dataset statistical shape" gains the exact-by-construction test-set sizes; Step 2
+  records the naive-parent-map vs charge-aware labeling. Awaiting NetMHCpan + human review of the run
+  command before any execution.
