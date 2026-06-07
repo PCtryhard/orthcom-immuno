@@ -1,0 +1,182 @@
+native_sequence,modified_sequence,modified_position,modification_type,native_IC50_nM,modified_IC50_nM,allele,length,insulin_segment,insulin_start,reported_A0201_epitope,pair_status,native_IC50_raw,modified_IC50_raw,provenance,notes
+MALWMRLLP,MALWMULLP,6,Citrullination,4539,2117,HLA-A*02:01,9,Leader,1,,complete,4539,2117,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r2,
+MALWMRLLPL,MALWMULLPL,6,Citrullination,1255,262,HLA-A*02:01,10,Leader,1,,complete,1255,262,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r3,
+ALWMRLLPL,ALWMULLPL,5,Citrullination,218,28,HLA-A*02:01,9,Leader,2,Yes,complete,218,28,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r4,
+ALWMRLLPLL,ALWMULLPLL,5,Citrullination,190,69,HLA-A*02:01,10,Leader,2,Yes,complete,190,69,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r5,
+LWMRLLPLL,LWMULLPLL,4,Citrullination,266,148,HLA-A*02:01,9,Leader,3,,complete,266,148,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r6,
+LWMRLLPLLA,LWMULLPLLA,4,Citrullination,406,61,HLA-A*02:01,10,Leader,3,,complete,406,61,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r7,
+WMRLLPLLA,WMULLPLLA,3,Citrullination,1530,1007,HLA-A*02:01,9,Leader,4,,complete,1530,1007,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r8,
+WMRLLPLLAL,WMULLPLLAL,3,Citrullination,654,310,HLA-A*02:01,10,Leader,4,,complete,654,310,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r9,
+MRLLPLLAL,MULLPLLAL,2,Citrullination,228,1863,HLA-A*02:01,9,Leader,5,,complete,228,1863,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r10,
+MRLLPLLALL,MULLPLLALL,2,Citrullination,10,98,HLA-A*02:01,10,Leader,5,,complete,10,98,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r11,
+RLLPLLALL,ULLPLLALL,1,Citrullination,145,83,HLA-A*02:01,9,Leader,6,Yes,complete,145,83,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r12,
+RLLPLLALLA,ULLPLLALLA,1,Citrullination,11,70,HLA-A*02:01,10,Leader,6,,complete,11,70,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r13,
+FVNQHLCGS,FVNQHLBGS,7,Oxidation of C,,,HLA-A*02:01,9,B chain,25,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r14,
+FVNQHLCGS,FVDEHLCGS,3;4,Deamidation,,,HLA-A*02:01,9,B chain,25,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r15,
+FVNQHLCGS,FVOZHLCGS,3;4,Deamidation,,,HLA-A*02:01,9,B chain,25,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r16,
+FVNQHLCGS,YVNQXLBGS,1;5;7,Pan oxidation,,,HLA-A*02:01,9,B chain,25,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r17,multi_site
+FVNQHLCGS,FVNQXLCGS,5,Pan oxidation,,,HLA-A*02:01,9,B chain,25,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r18,multi_site
+FVNQHLCGSH,FVNQHLBGSH,7,Oxidation of C,13213,,HLA-A*02:01,10,B chain,25,,modified_nonbinder,13213,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r19,
+FVNQHLCGSH,FVDEHLCGSH,3;4,Deamidation,13213,,HLA-A*02:01,10,B chain,25,,modified_nonbinder,13213,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r20,
+FVNQHLCGSH,FVOZHLCGSH,3;4,Deamidation,13213,,HLA-A*02:01,10,B chain,25,,modified_nonbinder,13213,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r21,
+FVNQHLCGSH,YVNQXLBGSX,1;5;7;10,Pan oxidation,13213,,HLA-A*02:01,10,B chain,25,,modified_nonbinder,13213,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r22,multi_site
+FVNQHLCGSH,FVNQXLCGSH,5,Pan oxidation,13213,,HLA-A*02:01,10,B chain,25,,modified_nonbinder,13213,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r23,multi_site
+VNQHLCGSH,VNQHLBGSH,6,Oxidation of C,,,HLA-A*02:01,9,B chain,26,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r24,
+VNQHLCGSH,VDEHLCGSH,2;3,Deamidation,,,HLA-A*02:01,9,B chain,26,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r25,
+VNQHLCGSH,VOZHLCGSH,2;3,Deamidation,,,HLA-A*02:01,9,B chain,26,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r26,
+VNQHLCGSH,VNQXLBGSX,4;6;9,Pan oxidation,,,HLA-A*02:01,9,B chain,26,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r27,multi_site
+VNQHLCGSH,VNQXLCGSH,4,Pan oxidation,,,HLA-A*02:01,9,B chain,26,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r28,multi_site
+VNQHLCGSHL,VNQHLBGSHL,6,Oxidation of C,6643,,HLA-A*02:01,10,B chain,26,,modified_nonbinder,6643,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r29,
+VNQHLCGSHL,VDEHLCGSHL,2;3,Deamidation,6643,,HLA-A*02:01,10,B chain,26,,modified_nonbinder,6643,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r30,
+VNQHLCGSHL,VOZHLCGSHL,2;3,Deamidation,6643,,HLA-A*02:01,10,B chain,26,,modified_nonbinder,6643,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r31,
+VNQHLCGSHL,VNQXLBGSXL,4;6;9,Pan oxidation,6643,,HLA-A*02:01,10,B chain,26,,modified_nonbinder,6643,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r32,multi_site
+VNQHLCGSHL,VNQXLCGSHL,4,Pan oxidation,6643,,HLA-A*02:01,10,B chain,26,,modified_nonbinder,6643,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r33,multi_site
+NQHLCGSHL,NQHLBGSHL,5,Oxidation of C,,,HLA-A*02:01,9,B chain,27,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r34,
+NQHLCGSHL,DEHLCGSHL,1;2,Deamidation,,,HLA-A*02:01,9,B chain,27,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r35,
+NQHLCGSHL,OZHLCGSHL,1;2,Deamidation,,,HLA-A*02:01,9,B chain,27,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r36,
+NQHLCGSHL,NQXLBGSXL,3;5;8,Pan oxidation,,,HLA-A*02:01,9,B chain,27,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r37,multi_site
+NQHLCGSHL,NQXLCGSHL,3,Pan oxidation,,,HLA-A*02:01,9,B chain,27,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r38,multi_site
+NQHLCGSHLV,NQHLBGSHLV,5,Oxidation of C,7994,,HLA-A*02:01,10,B chain,27,,modified_nonbinder,7994,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r39,
+NQHLCGSHLV,DEHLCGSHLV,1;2,Deamidation,7994,,HLA-A*02:01,10,B chain,27,,modified_nonbinder,7994,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r40,
+NQHLCGSHLV,OZHLCGSHLV,1;2,Deamidation,7994,,HLA-A*02:01,10,B chain,27,,modified_nonbinder,7994,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r41,
+NQHLCGSHLV,NQXLBGSXLV,3;5;8,Pan oxidation,7994,,HLA-A*02:01,10,B chain,27,,modified_nonbinder,7994,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r42,multi_site
+NQHLCGSHLV,NQXLCGSHLV,3,Pan oxidation,7994,,HLA-A*02:01,10,B chain,27,,modified_nonbinder,7994,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r43,multi_site
+QHLCGSHLV,EHLCGSHLV,1,Deamidation,,7237,HLA-A*02:01,9,B chain,28,,native_nonbinder,-,7237,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r44,
+QHLCGSHLV,QHLBGSHLV,4,Oxidation of C,,37883,HLA-A*02:01,9,B chain,28,,native_nonbinder,-,37883,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r45,
+QHLCGSHLV,QXLBGSXLV,2;4;7,Pan oxidation,,,HLA-A*02:01,9,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r46,multi_site
+QHLCGSHLV,QXLCGSHLV,2,Pan oxidation,,,HLA-A*02:01,9,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r47,multi_site
+QHLCGSHLV,ZHLCGSHLV,1,Deamidation,,,HLA-A*02:01,9,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r48,
+QHLCGSHLVE,QHLBGSHLVE,4,Oxidation of C,,,HLA-A*02:01,10,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r49,
+QHLCGSHLVE,EHLCGSHLVE,1,Deamidation,,,HLA-A*02:01,10,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r50,
+QHLCGSHLVE,QXLBGSXLVE,2;4;7,Pan oxidation,,,HLA-A*02:01,10,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r51,multi_site
+QHLCGSHLVE,QXLCGSHLVE,2,Pan oxidation,,,HLA-A*02:01,10,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r52,multi_site
+QHLCGSHLVE,ZHLCGSHLVE,1,Deamidation,,,HLA-A*02:01,10,B chain,28,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r53,
+HLCGSHLVE,HLBGSHLVE,3,Oxidation of C,,,HLA-A*02:01,9,B chain,29,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r54,
+HLCGSHLVE,XLBGSXLVE,1;3;6,Pan oxidation,,,HLA-A*02:01,9,B chain,29,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r55,multi_site
+HLCGSHLVE,XLCGSHLVE,1,Pan oxidation,,,HLA-A*02:01,9,B chain,29,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r56,multi_site
+HLCGSHLVEA,HLBGSHLVEA,3,Oxidation of C,7536,6210,HLA-A*02:01,10,B chain,29,Yes,complete,7536,6210,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r57,
+HLCGSHLVEA,XLBGSXLVEA,1;3;6,Pan oxidation,7536,10687,HLA-A*02:01,10,B chain,29,Yes,complete,7536,10687,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r58,multi_site
+HLCGSHLVEA,XLCGSHLVEA,1,Pan oxidation,7536,11800,HLA-A*02:01,10,B chain,29,Yes,complete,7536,11800,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r59,multi_site
+LCGSHLVEA,LBGSHLVEA,2,Oxidation of C,1353,14796,HLA-A*02:01,9,B chain,30,,complete,1353,14796,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r60,
+LCGSHLVEA,LBGSXLVEA,2;5,Pan oxidation,1353,13270,HLA-A*02:01,9,B chain,30,,complete,1353,13270,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r61,multi_site
+LCGSHLVEAL,LBGSHLVEAL,2,Oxidation of C,,,HLA-A*02:01,10,B chain,30,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r62,
+LCGSHLVEAL,LBGSXLVEAL,2;5,Pan oxidation,,,HLA-A*02:01,10,B chain,30,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r63,multi_site
+CGSHLVEAL,BGSHLVEAL,1,Oxidation of C,,,HLA-A*02:01,9,B chain,31,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r64,
+CGSHLVEAL,BGSXLVEAL,1;4,Pan oxidation,,,HLA-A*02:01,9,B chain,31,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r65,multi_site
+CGSHLVEALY,BGSHLVEALY,1,Oxidation of C,33691,8043,HLA-A*02:01,10,B chain,31,,complete,33691,8043,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r66,
+CGSHLVEALY,CGSHLVEALJ,10,Chlorination,33691,38276,HLA-A*02:01,10,B chain,31,,complete,33691,38276,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r67,
+CGSHLVEALY,BGSXLVEALY,1;4,Pan oxidation,33691,,HLA-A*02:01,10,B chain,31,,modified_nonbinder,33691,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r68,multi_site
+GSHLVEALY,GSHLVEALJ,9,Chlorination,3962,30634,HLA-A*02:01,9,B chain,32,,complete,3962,30634,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r69,
+GSHLVEALYL,GSHLVEALJL,9,Chlorination,1770,6837,HLA-A*02:01,10,B chain,32,,complete,1770,6837,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r70,
+SHLVEALYL,SHLVEALJL,8,Chlorination,257,445,HLA-A*02:01,9,B chain,33,,complete,257,445,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r71,
+SHLVEALYLV,SHLVEALJLV,8,Chlorination,2153,1066,HLA-A*02:01,10,B chain,33,Yes,complete,2153,1066,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r72,
+HLVEALYLV,HLVEALJLV,7,Chlorination,134,55,HLA-A*02:01,9,B chain,34,Yes,complete,134,55,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r73,
+HLVEALYLVC,HLVEALJLVC,7,Chlorination,692,2132,HLA-A*02:01,10,B chain,34,,complete,692,2132,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r74,
+LVEALYLVC,LVEALJLVC,6,Chlorination,11770,11768,HLA-A*02:01,9,B chain,35,,complete,11770,11768,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r75,
+LVEALYLVCG,LVEALJLVCG,6,Chlorination,23250,15300,HLA-A*02:01,10,B chain,35,,complete,23250,15300,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r76,
+VEALYLVCG,VEALJLVCG,5,Chlorination,14340,18759,HLA-A*02:01,9,B chain,36,,complete,14340,18759,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r77,
+VEALYLVCGE,VEALJLVCGE,5,Chlorination,8867,,HLA-A*02:01,10,B chain,36,,modified_nonbinder,8867,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r78,
+EALYLVCGE,EALJLVCGE,4,Chlorination,12021,13342,HLA-A*02:01,9,B chain,37,,complete,12021,13342,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r79,
+EALYLVCGER,EALYLVCGEU,10,Citrullination,10069,3100,HLA-A*02:01,10,B chain,37,,complete,10069,3100,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r80,
+EALYLVCGER,EALJLVCGER,4,Chlorination,10069,8562,HLA-A*02:01,10,B chain,37,,complete,10069,8562,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r81,
+ALYLVCGER,ALJLVCGER,3,Chlorination,1792,2988,HLA-A*02:01,9,B chain,38,,complete,1792,2988,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r82,
+ALYLVCGER,ALYLVCGEU,9,Citrullination,1792,1241,HLA-A*02:01,9,B chain,38,,complete,1792,1241,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r83,
+ALYLVCGERG,ALJLVCGERG,3,Chlorination,8784,2734,HLA-A*02:01,10,B chain,38,,complete,8784,2734,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r84,
+ALYLVCGERG,ALYLVCGEUG,9,Citrullination,8784,9076,HLA-A*02:01,10,B chain,38,,complete,8784,9076,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r85,
+LYLVCGERG,LYLVCGEUG,8,Citrullination,28006,12493,HLA-A*02:01,9,B chain,39,,complete,28006,12493,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r86,
+LYLVCGERG,LJLVCGERG,2,Chlorination,28006,19307,HLA-A*02:01,9,B chain,39,,complete,28006,19307,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r87,
+LYLVCGERGF,LJLVCGERGF,2,Chlorination,13418,14255,HLA-A*02:01,10,B chain,39,,complete,13418,14255,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r88,
+LYLVCGERGF,LYLVCGEUGF,8,Citrullination,13418,18784,HLA-A*02:01,10,B chain,39,,complete,13418,18784,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r89,
+LYLVCGERGF,LYLVCGERGY,10,Oxidation of F,13418,,HLA-A*02:01,10,B chain,39,,modified_nonbinder,13418,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r90,
+LYLVCGERGF,LYLVBGERGY,5;10,Pan oxidation,13418,35512,HLA-A*02:01,10,B chain,39,,complete,13418,35512,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r91,multi_site
+YLVCGERGF,JLVCGERGF,1,Chlorination,6742,3163,HLA-A*02:01,9,B chain,40,,complete,6742,3163,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r92,
+YLVCGERGF,YLVBGERGY,4;9,Pan oxidation,6742,3244,HLA-A*02:01,9,B chain,40,,complete,6742,3244,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r93,multi_site
+YLVCGERGF,YLVCGEUGF,7,Citrullination,6742,11365,HLA-A*02:01,9,B chain,40,,complete,6742,11365,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r94,
+YLVCGERGF,YLVCGERGY,9,Oxidation of F,6742,10814,HLA-A*02:01,9,B chain,40,,complete,6742,10814,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r95,
+YLVCGERGFF,JLVCGERGFF,1,Chlorination,1399,1690,HLA-A*02:01,10,B chain,40,,complete,1399,1690,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r96,
+YLVCGERGFF,YLVCGEUGFF,7,Citrullination,1399,2617,HLA-A*02:01,10,B chain,40,,complete,1399,2617,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r97,
+YLVCGERGFF,YLVCGERGYF,9,Oxidation of F,1399,2009,HLA-A*02:01,10,B chain,40,,complete,1399,2009,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r98,
+YLVCGERGFF,YLVBGERGYY,4;9;10,Pan oxidation,1399,2421,HLA-A*02:01,10,B chain,40,,complete,1399,2421,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r99,multi_site
+LVCGERGFF,LVCGEUGFF,6,Citrullination,,,HLA-A*02:01,9,B chain,41,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r100,
+LVCGERGFF,LVCGERGYF,8,Oxidation of F,,,HLA-A*02:01,9,B chain,41,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r101,
+LVCGERGFF,LVBGERGYY,3;8;9,Pan oxidation,,,HLA-A*02:01,9,B chain,41,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r102,multi_site
+LVCGERGFFY,LVCGERGFFJ,10,Chlorination,23164,27675,HLA-A*02:01,10,B chain,41,,complete,23164,27675,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r103,
+LVCGERGFFY,LVCGEUGFFY,6,Citrullination,23164,,HLA-A*02:01,10,B chain,41,,modified_nonbinder,23164,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r104,
+LVCGERGFFY,LVCGERGYFY,8,Oxidation of F,23164,,HLA-A*02:01,10,B chain,41,,modified_nonbinder,23164,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r105,
+LVCGERGFFY,LVBGERGYYY,3;8;9,Pan oxidation,23164,,HLA-A*02:01,10,B chain,41,,modified_nonbinder,23164,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r106,multi_site
+VCGERGFFY,VCGERGFFJ,9,Chlorination,,,HLA-A*02:01,9,B chain,42,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r107,
+VCGERGFFY,VCGEUGFFY,5,Citrullination,,33476,HLA-A*02:01,9,B chain,42,,native_nonbinder,-,33476,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r108,
+VCGERGFFY,VCGERGYFY,7,Oxidation of F,,,HLA-A*02:01,9,B chain,42,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r109,
+VCGERGFFY,VBGERGYYY,2;7;8,Pan oxidation,,,HLA-A*02:01,9,B chain,42,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r110,multi_site
+VCGERGFFYT,VCGERGFFJT,9,Chlorination,,,HLA-A*02:01,10,B chain,42,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r111,
+VCGERGFFYT,VCGEUGFFYT,5,Citrullination,,,HLA-A*02:01,10,B chain,42,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r112,
+VCGERGFFYT,VCGERGYFYT,7,Oxidation of F,,,HLA-A*02:01,10,B chain,42,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r113,
+VCGERGFFYT,VBGERGYYYT,2;7;8,Pan oxidation,,,HLA-A*02:01,10,B chain,42,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r114,multi_site
+CGERGFFYT,CGERGFFJT,8,Chlorination,,38400,HLA-A*02:01,9,B chain,43,,native_nonbinder,-,38400,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r115,
+CGERGFFYT,CGEUGFFYT,4,Citrullination,,,HLA-A*02:01,9,B chain,43,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r116,
+CGERGFFYT,CGERGYFYT,6,Oxidation of F,,26255,HLA-A*02:01,9,B chain,43,,native_nonbinder,-,26255,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r117,
+CGERGFFYT,BGERGYYYT,1;6;7,Pan oxidation,,,HLA-A*02:01,9,B chain,43,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r118,multi_site
+CGERGFFYTP,CGERGFFJTP,8,Chlorination,,27807,HLA-A*02:01,10,B chain,43,,native_nonbinder,-,27807,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r119,
+CGERGFFYTP,CGEUGFFYTP,4,Citrullination,,,HLA-A*02:01,10,B chain,43,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r120,
+CGERGFFYTP,CGERGYFYTP,6,Oxidation of F,,,HLA-A*02:01,10,B chain,43,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r121,
+CGERGFFYTP,BGERGYYYTP,1;6;7,Pan oxidation,,,HLA-A*02:01,10,B chain,43,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r122,multi_site
+GERGFFYTP,GERGFFJTP,7,Chlorination,,,HLA-A*02:01,9,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r123,
+GERGFFYTP,GEUGFFYTP,3,Citrullination,,,HLA-A*02:01,9,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r124,
+GERGFFYTP,GERGYFYTP,5,Oxidation of F,,,HLA-A*02:01,9,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r125,
+GERGFFYTP,GERGYYYTP,5;6,Pan oxidation,,,HLA-A*02:01,9,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r126,multi_site
+GERGFFYTPK,GERGFFJTPK,7,Chlorination,,,HLA-A*02:01,10,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r127,
+GERGFFYTPK,GEUGFFYTPK,3,Citrullination,,,HLA-A*02:01,10,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r128,
+GERGFFYTPK,GERGYFYTPK,5,Oxidation of F,,,HLA-A*02:01,10,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r129,
+GERGFFYTPK,GERGYYYTPK,5;6,Pan oxidation,,,HLA-A*02:01,10,B chain,44,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r130,multi_site
+ERGFFYTPK,ERGFFJTPK,6,Chlorination,,,HLA-A*02:01,9,B chain,45,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r131,
+ERGFFYTPK,EUGFFYTPK,2,Citrullination,,38093,HLA-A*02:01,9,B chain,45,,native_nonbinder,-,38093,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r132,
+ERGFFYTPK,ERGYFYTPK,4,Oxidation of F,,,HLA-A*02:01,9,B chain,45,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r133,
+ERGFFYTPK,ERGYYYTPK,4;5,Pan oxidation,,,HLA-A*02:01,9,B chain,45,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r134,multi_site
+ERGFFYTPKT,ERGYYYTPKT,4;5,Pan oxidation,,5730,HLA-A*02:01,10,B chain,45,,native_nonbinder,-,5730,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r135,multi_site
+ERGFFYTPKT,ERGFFJTPKT,6,Chlorination,,,HLA-A*02:01,10,B chain,45,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r136,
+ERGFFYTPKT,EUGFFYTPKT,2,Citrullination,,36308,HLA-A*02:01,10,B chain,45,,native_nonbinder,-,36308,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r137,
+ERGFFYTPKT,ERGYFYTPKT,4,Oxidation of F,,,HLA-A*02:01,10,B chain,45,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r138,
+RGFFYTPKT,RGYYYTPKT,3;4,Pan oxidation,,8805,HLA-A*02:01,9,B chain,46,,native_nonbinder,-,8805,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r139,multi_site
+RGFFYTPKT,RGFFJTPKT,5,Chlorination,,,HLA-A*02:01,9,B chain,46,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r140,
+RGFFYTPKT,UGFFYTPKT,1,Citrullination,,27300,HLA-A*02:01,9,B chain,46,,native_nonbinder,-,27300,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r141,
+RGFFYTPKT,RGYFYTPKT,3,Oxidation of F,,,HLA-A*02:01,9,B chain,46,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r142,
+RGFFYTPKTR,UGFFYTPKTU,1;10,Citrullination,,,HLA-A*02:01,10,,46,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r143,
+GFFYTPKTR,GFFYTPKTU,9,Citrullination,12176,38420,HLA-A*02:01,9,,47,,complete,12176,38420,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r144,
+GFFYTPKTRR,GFFYTPKTUU,9;10,Citrullination,,,HLA-A*02:01,10,,47,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r145,
+FFYTPKTRR,FFYTPKTUU,8;9,Citrullination,,,HLA-A*02:01,9,,48,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r146,
+FFYTPKTRRE,FFYTPKTUUE,8;9,Citrullination,,28285,HLA-A*02:01,10,,48,,native_nonbinder,-,28285,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r147,
+FYTPKTRRE,FYTPKTUUE,7;8,Citrullination,,,HLA-A*02:01,9,,49,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r148,
+FYTPKTRREA,FYTPKTUUEA,7;8,Citrullination,,,HLA-A*02:01,10,,49,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r149,
+YTPKTRREA,YTPKTUUEA,6;7,Citrullination,,34672,HLA-A*02:01,9,,50,,native_nonbinder,-,34672,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r150,
+YTPKTRREAE,YTPKTUUEAE,6;7,Citrullination,,,HLA-A*02:01,10,,50,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r151,
+TPKTRREAE,TPKTUUEAE,5;6,Citrullination,,,HLA-A*02:01,9,,51,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r152,
+TPKTRREAED,TPKTUUEAED,5;6,Citrullination,,,HLA-A*02:01,10,,51,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r153,
+PKTRREAED,PKTUUEAED,4;5,Citrullination,,,HLA-A*02:01,9,,52,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r154,
+PKTRREAEDL,PKTUUEAEDL,4;5,Citrullination,,,HLA-A*02:01,10,,52,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r155,
+KTRREAEDL,KTUUEAEDL,3;4,Citrullination,,,HLA-A*02:01,9,,53,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r156,
+KTRREAEDLQ,KTUUEAEDLQ,3;4,Citrullination,,22304,HLA-A*02:01,10,,53,,native_nonbinder,-,22304,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r157,
+TRREAEDLQ,TUUEAEDLQ,2;3,Citrullination,,,HLA-A*02:01,9,,54,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r158,
+TRREAEDLQV,TUUEAEDLQV,2;3,Citrullination,,30243,HLA-A*02:01,10,,54,,native_nonbinder,-,30243,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r159,
+RREAEDLQV,UUEAEDLQV,1;2,Citrullination,,,HLA-A*02:01,9,,55,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r160,
+RREAEDLQVG,UUEAEDLQVG,1;2,Citrullination,,,HLA-A*02:01,10,,55,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r161,
+REAEDLQVG,UEAEDLQVG,1,Citrullination,,,HLA-A*02:01,9,,56,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r162,
+REAEDLQVGQ,UEAEDLQVGQ,1,Citrullination,23725,,HLA-A*02:01,10,,56,,modified_nonbinder,23725,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r163,
+LALEGSLQKR,LALEGSLQKU,10,Citrullination,,16354,HLA-A*02:01,10,,80,,native_nonbinder,-,16354,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r164,
+ALEGSLQKR,ALEGSLQKU,9,Citrullination,,,HLA-A*02:01,9,,81,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r165,
+ALEGSLQKRG,ALEGSLQKUG,9,Citrullination,,,HLA-A*02:01,10,,81,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r166,
+LEGSLQKRG,LEGSLQKUG,8,Citrullination,,,HLA-A*02:01,9,,82,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r167,
+LEGSLQKRGI,LEGSLQKUGI,8,Citrullination,,,HLA-A*02:01,10,,82,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r168,
+EGSLQKRGI,EGSLQKUGI,7,Citrullination,,,HLA-A*02:01,9,,83,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r169,
+EGSLQKRGIV,EGSLQKUGIV,7,Citrullination,,,HLA-A*02:01,10,,83,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r170,
+GSLQKRGIV,GSLQKUGIV,6,Citrullination,32748,,HLA-A*02:01,9,,84,,modified_nonbinder,32748,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r171,
+GSLQKRGIVE,GSLQKUGIVE,6,Citrullination,,34549,HLA-A*02:01,10,,84,,native_nonbinder,-,34549,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r172,
+SLQKRGIVE,SLQKUGIVE,5,Citrullination,5952,,HLA-A*02:01,9,,85,,modified_nonbinder,5952,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r173,
+SLQKRGIVEQ,SLQKUGIVEQ,5,Citrullination,,,HLA-A*02:01,10,,85,Yes,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r174,
+LQKRGIVEQ,LQKUGIVEQ,4,Citrullination,,,HLA-A*02:01,9,,86,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r175,
+LQKRGIVEQC,LQKUGIVEQC,4,Citrullination,,,HLA-A*02:01,10,,86,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r176,
+QKRGIVEQC,QKUGIVEQC,3,Citrullination,,,HLA-A*02:01,9,,87,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r177,
+QKRGIVEQCC,QKUGIVEQCC,3,Citrullination,,,HLA-A*02:01,10,,87,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r178,
+KRGIVEQCC,KUGIVEQCC,2,Citrullination,,,HLA-A*02:01,9,,88,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r179,
+KRGIVEQCCT,KUGIVEQCCT,2,Citrullination,,,HLA-A*02:01,10,,88,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r180,
+RGIVEQCCT,UGIVEQCCT,1,Citrullination,,,HLA-A*02:01,9,,89,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r181,
+RGIVEQCCTS,UGIVEQCCTS,1,Citrullination,,,HLA-A*02:01,10,,89,,both_nonbinder,-,-,Sidney&Sette2018 PMC5863483 Add.file3(MOESM3) tbl-row r182,

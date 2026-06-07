@@ -124,3 +124,43 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
 - **Known follow-up.** GitHub repo creation + push is pending: `gh` is not installed on this
   machine. The local repo + initial commit are complete; remote creation/push awaits a decision
   (install `gh`, or create the remote another way).
+
+---
+
+## 2026-06-07 — Step 0 closed (pushed)
+- Scaffold commit `8c382f7` + doc-clarification commit `ffd793e` (the 2-Nal hash-types note)
+  pushed to **private** GitHub `PCtryhard/orthcom-immuno` (`main`, via authed `gh`; no auth
+  prompt). User confirmed; `PLAN.md` Step 0 → `DONE`.
+
+## 2026-06-07 — Step 1: PTM validation dataset (build only; awaiting spot-check)
+- **What.** Built `data/validation/validation_ptm_a0201.csv` — the modified-vs-native peptide
+  IC50 dataset for **HLA-A\*02:01** — from Sidney & Sette et al. 2018 (*BMC Immunol*,
+  PMC5863483, DOI 10.1186/s12865-018-0250-3), **Additional file 3 (MOESM3)** "Measured binding
+  affinities." 181 modified-peptide rows (the complete A\*02:01 PTM set); 16 columns incl.
+  per-row provenance (MOESM3 table-row index). CSV sha256 `54407a90…b557a95107`.
+- **Source + method (reproducible; no fabrication).**
+  - MOESM3 `.docx` archived at `data/validation/sources/` (sha256 `ffbebafe…a0a27f`, CC-BY) —
+    downloaded from Springer static-content (PMC `/bin/` URL returned a stub). See
+    `sources/SOURCES.md`.
+  - Extracted **deterministically** from the Word table XML by
+    `data/validation/build_validation_ptm_a0201.py` (stdlib only) — no model, OCR, or
+    hand-transcription. IC50 columns mapped: "Modified" → modified-peptide IC50, "WT" → native
+    IC50; orientation **verified** by reproducing the paper's own "4 of 9 reported epitopes
+    improved ≥2-fold" (ALWMRLLPL, ALWMRLLPLL, SHLVEALYLV, HLVEALYLV).
+  - Modification **position** derived by diffing native vs modified sequence (1-based peptide
+    coords; ";"-joined for multi-site oxidation).
+- **`-` handling (critical).** Per Methods, a dash = **IC50 > 40,000 nM (non-binder)**, not
+  "missing." Recorded as a **blank** numeric field (never guessed/interpolated); `pair_status`
+  = `*_nonbinder`; the raw `-` is preserved in `*_IC50_raw`.
+- **Counts.** `pair_status`: **complete 50** (both numeric), modified_nonbinder 24,
+  native_nonbinder 17, both_nonbinder 90 (= 181). By modification: Citrullination 70,
+  Pan oxidation 38, Chlorination 29, Deamidation 16, Oxidation of C 14, Oxidation of F 14.
+- **Flags / uncertainties (for spot-check).**
+  - `X` (oxidized His in "Pan oxidation" rows) appears in modified sequences but is **not** in
+    the MOESM3 letter legend (defines only B/J/O/Z/U); meaning inferred from Methods.
+  - The `-` = ">40,000 nM" threshold was read from the Methods via web fetch — **confirm vs the PDF**.
+  - No value was guessed: MOESM3 is digital text (not a scanned figure), so every numeric IC50 is
+    read exactly; no figure-derived values were used.
+- **Scope.** Dataset assembly only — **no NetMHCpan, no Psi4, no analysis** (Steps 2–3).
+- **Gate.** STOP for human spot-check (≥5 CSV rows vs the PDF/MOESM3) before `PLAN.md` Step 1 →
+  `DONE`. Step-1 changes are staged in the working tree, **not yet committed** (awaiting green-light).
