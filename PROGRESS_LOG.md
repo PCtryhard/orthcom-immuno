@@ -185,3 +185,29 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
 - **Effect.** PLAN "Dataset statistical shape" gains the exact-by-construction test-set sizes; Step 2
   records the naive-parent-map vs charge-aware labeling. Awaiting NetMHCpan + human review of the run
   command before any execution.
+
+## 2026-06-07 — Step 2: predictor route (IEDB standalone) + hard input guard
+- **DTU NetMHCpan-4.1 blocked** (academic form inaccessible). **Pivot to the IEDB MHC-I standalone**,
+  which bundles **`netmhcpan_el` = NetMHCpan-4.1 EL** as a local method (no DTU form, runs offline).
+  Route **confirmed viable** (research + WSL probe):
+  - Package: **`IEDB_MHC_I-3.1.7.tar.gz`** (latest; **~360 MB**), free academic license (Academic
+    Software License + Non-Profit OSL v3.0). URL:
+    `https://downloads.iedb.org/tools/mhci/3.1.7/IEDB_MHC_I-3.1.7.tar.gz`.
+  - Requirements: Python 3.6+ (**WSL has 3.12.3 ✓**), **tcsh** (MISSING), **gawk** (✓), Linux 64-bit
+    (**WSL Ubuntu 24.04 ✓**). Install: unpack → run `./configure`; path containing `/mhc_i` must be
+    < 57 chars.
+  - Run syntax (from README): `./src/predict_binding.py netmhcpan_el HLA-A*02:01 <len> <input.fasta>`;
+    input = FASTA.
+  - **Planned install path:** `/home/max/mhc_i` (17 chars, < 57 ✓).
+- **Blocker (human action — `sudo` needs a password here, I can't apt-install):**
+  `sudo apt install -y tcsh make unzip`. **tcsh is the hard requirement** (the netMHCpan wrapper is a
+  tcsh script). The ~360 MB download also awaits an explicit go.
+- **Hard input guard added — `src/seq_guard.py`** (committed): HALTS if any peptide sent to the
+  predictor contains a non-canonical code (`U/J/B/O/Z/X`). NetMHCpan silently maps unknown letters to
+  `X`, so a leftover code would yield confident-looking garbage; the guard makes that loud and stops
+  the run. **Self-test passes** (canonical pass; all six codes halt with position+meaning; `guard_all`
+  halts the batch on first offender). Surrogate substitution must run upstream; `guard_all()` is to be
+  called immediately before every predictor invocation.
+- **No predictions, no Psi4.** Awaiting: (a) human installs tcsh; (b) approval of the ~360 MB download;
+  then I install + configure and show the exact run command + a 3-row formatted-input sample for
+  review before any prediction.
