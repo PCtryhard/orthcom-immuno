@@ -1,0 +1,23 @@
+STEP 2 — SURROGATE-ERROR SUMMARY (numbers only; no interpretation)
+======================================================================
+predicted = NetMHCpan-4.1 of the surrogate peptide; measured = modified-peptide IC50.
+log10_resid = log10(pred_Aff_nM) - log10(measured_IC50_nM)  [+ => pred weaker; - => stronger]
+
+1) REGRESSION (numeric measured rows) — Spearman rho in log space
+   naive_parent_map  n= 61  Spearman rho = +0.807   [PILOT: n small]
+   charge_aware      n= 61  Spearman rho = +0.759   [PILOT: n small]
+
+2) CLASSIFICATION — truth: binder=measured numeric, non-binder=measured >40,000 (censored)
+  predicted-binder rule: EL%rank<= 2.0
+     naive_parent_map  acc=0.669  [TP=10 FN=51 | FP=0 TN=93]  censored(non-binders) n=93: TN=93 correct, FP=0 called binder
+     charge_aware      acc=0.675  [TP=11 FN=50 | FP=0 TN=93]  censored(non-binders) n=93: TN=93 correct, FP=0 called binder
+
+  predicted-binder rule: Aff<= 500nM
+     naive_parent_map  acc=0.669  [TP=10 FN=51 | FP=0 TN=93]  censored(non-binders) n=93: TN=93 correct, FP=0 called binder
+     charge_aware      acc=0.682  [TP=12 FN=49 | FP=0 TN=93]  censored(non-binders) n=93: TN=93 correct, FP=0 called binder
+
+3) ASSUME-NO-EFFECT (rows where naive-surrogate == native; naive scheme)
+   rows where naive==native: 135  (58 numeric, 77 censored)
+   |log10_resid| on the 58 numeric: median=0.32  max=2.04
+     within 2-fold (|resid|<=0.3): 28   2-10x (0.3-1.0): 20   >10-fold off (|resid|>1.0): 10
+   censored subset (77 true non-binders): naive-surrogate predicts BINDER for 0 (EL%rank<=2) / 0 (Aff<=500nM)

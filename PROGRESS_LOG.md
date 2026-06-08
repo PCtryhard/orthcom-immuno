@@ -277,3 +277,37 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
   map in both schemes), where the two scheme rows are identical apart from the label.
 - **No summary statistic computed** (no Spearman, no classification) — table only. **STOP for human
   review of the joined table.** No Psi4.
+
+## 2026-06-08 — Step 2 CLOSED + SESSION END (Steps 0–2 done; Step 3 not started)
+**Step 2 surrogate-error summary** — `src/summarize_surrogate_baseline.py` →
+`results/surrogate_baseline.csv` + `results/surrogate_baseline_summary.txt`. **Numbers only, no
+interpretation (gated):**
+- **Regression** — Spearman ρ in log space, numeric rows (n=61/scheme, **PILOT — small n**):
+  naive_parent_map **+0.807**, charge_aware **+0.759**. (Spearman is rank-based ⇒ log-invariant.)
+- **Classification** — truth = the assay's own dichotomy (binder = measured numeric ≤40,000 nM;
+  non-binder = censored >40,000 nM); predicted-binder rule stated, not optimised. EL %rank ≤ 2:
+  naive acc **0.669** [TP=10 FN=51 FP=0 TN=93]; charge **0.675** [TP=11 FN=50 FP=0 TN=93]. Aff ≤ 500 nM:
+  naive 0.669; charge 0.682. **On the 93 censored non-binders/scheme: TN=93, FP=0** (none mis-called a
+  binder). (Accuracy is dominated by TN; loose ≤40,000 "binder" truth vs strict predicted threshold
+  drives FN — caveat noted, not interpreted.)
+- **Assume-no-effect** (the 135 naive==native rows; naive scheme): 58 numeric + 77 censored. On the 58
+  numeric, **median |log10 resid| = 0.32** (~2-fold), max 2.04; **within 2-fold: 28 / 2–10×: 20 /
+  >10-fold off: 10**. On the 77 censored true non-binders, assume-no-effect predicts a binder for **0**.
+
+**SESSION STATE.** Step 0 (repo/scaffold) DONE · Step 1 (PTM validation dataset, 181 A\*02:01 rows)
+DONE · Step 2 (surrogate baseline) DONE. **Step 3 NOT started.**
+
+**What Step 3 requires (the real go/no-go).** Structure-based scoring of the *modified pMHC*: pick one
+well-characterised PTM case, build the modified peptide–HLA-A\*02:01 complex from a solved A\*02:01
+crystal template, graft the modified residue into the groove, run a conformer→charge→physics score of
+the **complex/interface**, and compare structure-based score vs measured IC50 vs the surrogate baseline
+above. This needs a pMHC structural-modeling pipeline that does **not** yet exist in this repo.
+
+**FLAG — the carried-over physics scripts do NOT do this.** `src/physics/generate_conformer.py` is
+hardcoded to the **L4F** SMILES `C(O)(=O)[C@H](CC1=CC=C(F)C=C1)N` and writes a single ncAA `.mol`;
+`src/physics/run_psi4_dft.py` runs a **B3LYP/6-31G\* single-point on that one molecule**. Neither loads a
+peptide, an HLA structure, or scores a complex/interface. **Step 3 = NEW structural modeling (template +
+graft + complex/interface scoring), NOT a re-point of these two scripts** — they carry over only as a
+conformer/DFT building block for the eventual partial-charge step.
+
+**No Psi4 run, no Step 3 work this session.**

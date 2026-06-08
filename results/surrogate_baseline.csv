@@ -1,0 +1,26 @@
+analysis,scheme,n,metric,value
+regression_logspace,naive_parent_map,61,spearman_rho,0.807
+regression_logspace,charge_aware,61,spearman_rho,0.759
+classification,naive_parent_map,154,EL%rank<= 2.0|accuracy,0.669
+classification,naive_parent_map,154,EL%rank<= 2.0|TP,10
+classification,naive_parent_map,154,EL%rank<= 2.0|FP,0
+classification,naive_parent_map,154,EL%rank<= 2.0|TN,93
+classification,naive_parent_map,154,EL%rank<= 2.0|FN,51
+classification,charge_aware,154,EL%rank<= 2.0|accuracy,0.675
+classification,charge_aware,154,EL%rank<= 2.0|TP,11
+classification,charge_aware,154,EL%rank<= 2.0|FP,0
+classification,charge_aware,154,EL%rank<= 2.0|TN,93
+classification,charge_aware,154,EL%rank<= 2.0|FN,50
+classification,naive_parent_map,154,Aff<= 500nM|accuracy,0.669
+classification,naive_parent_map,154,Aff<= 500nM|TP,10
+classification,naive_parent_map,154,Aff<= 500nM|FP,0
+classification,naive_parent_map,154,Aff<= 500nM|TN,93
+classification,naive_parent_map,154,Aff<= 500nM|FN,51
+classification,charge_aware,154,Aff<= 500nM|accuracy,0.682
+classification,charge_aware,154,Aff<= 500nM|TP,12
+classification,charge_aware,154,Aff<= 500nM|FP,0
+classification,charge_aware,154,Aff<= 500nM|TN,93
+classification,charge_aware,154,Aff<= 500nM|FN,49
+assume_no_effect,naive_parent_map,58,median_abs_log10_resid,0.316
+assume_no_effect,naive_parent_map,58,n_gt_10fold_off,10
+assume_no_effect,naive_parent_map,77,censored_predicted_binder_ELrank,0
