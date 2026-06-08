@@ -1,0 +1,24 @@
+group,source_row,modification_type,native_seq,modified_seq,surrogate_peptide,modified_position,pred_Aff_nM,pred_EL_rank,measured_modified_IC50_nM,log10_resid,predicted_binder
+assume_nothing_gt10fold,r72,Chlorination,SHLVEALYLV,SHLVEALJLV,SHLVEALYLV,8,9.79,0.596,1066,-2.037,binder
+assume_nothing_gt10fold,r71,Chlorination,SHLVEALYL,SHLVEALJL,SHLVEALYL,8,20129.31,17.284,445,1.655,non-binder
+assume_nothing_gt10fold,r7,Citrullination,LWMRLLPLLA,LWMULLPLLA,LWMRLLPLLA,4,2688.50,19.553,61,1.644,non-binder
+assume_nothing_gt10fold,r74,Chlorination,HLVEALYLVC,HLVEALJLVC,HLVEALYLVC,7,84.73,3.663,2132,-1.401,non-binder
+assume_nothing_gt10fold,r59,Pan oxidation,HLCGSHLVEA,XLCGSHLVEA,HLCGSHLVEA,1,524.58,1.906,11800,-1.352,binder
+assume_nothing_gt10fold,r58,Pan oxidation,HLCGSHLVEA,XLBGSXLVEA,HLCGSHLVEA,1;3;6,524.58,1.906,10687,-1.309,binder
+assume_nothing_gt10fold,r73,Chlorination,HLVEALYLV,HLVEALJLV,HLVEALYLV,7,3.68,0.032,55,-1.175,binder
+assume_nothing_gt10fold,r57,Oxidation of C,HLCGSHLVEA,HLBGSHLVEA,HLCGSHLVEA,3,524.58,1.906,6210,-1.073,binder
+assume_nothing_gt10fold,r6,Citrullination,LWMRLLPLL,LWMULLPLL,LWMRLLPLL,4,1652.79,8.587,148,1.048,non-binder
+assume_nothing_gt10fold,r12,Citrullination,RLLPLLALL,ULLPLLALL,RLLPLLALL,1,7.52,0.055,83,-1.043,binder
+binding_created_native_nonbinder,r164,Citrullination,LALEGSLQKR,LALEGSLQKU,LALEGSLQKR,10,31601.33,23.964,16354,0.286,non-binder
+binding_created_native_nonbinder,r157,Citrullination,KTRREAEDLQ,KTUUEAEDLQ,KTRREAEDLQ,3;4,42288.33,76.667,22304,0.278,non-binder
+binding_created_native_nonbinder,r141,Citrullination,RGFFYTPKT,UGFFYTPKT,RGFFYTPKT,1,18089.12,21.421,27300,-0.179,non-binder
+binding_created_native_nonbinder,r119,Chlorination,CGERGFFYTP,CGERGFFJTP,CGERGFFYTP,8,30601.64,78.333,27807,0.042,non-binder
+binding_created_native_nonbinder,r147,Citrullination,FFYTPKTRRE,FFYTPKTUUE,FFYTPKTRRE,8;9,36474.57,46.600,28285,0.11,non-binder
+binding_created_native_nonbinder,r159,Citrullination,TRREAEDLQV,TUUEAEDLQV,TRREAEDLQV,2;3,38969.04,45.167,30243,0.11,non-binder
+binding_created_native_nonbinder,r108,Citrullination,VCGERGFFY,VCGEUGFFY,VCGERGFFY,5,35769.14,32.667,33476,0.029,non-binder
+binding_created_native_nonbinder,r172,Citrullination,GSLQKRGIVE,GSLQKUGIVE,GSLQKRGIVE,6,35065.23,48.800,34549,0.006,non-binder
+binding_created_native_nonbinder,r150,Citrullination,YTPKTRREA,YTPKTUUEA,YTPKTRREA,6;7,27361.43,14.664,34672,-0.103,non-binder
+binding_created_native_nonbinder,r137,Citrullination,ERGFFYTPKT,EUGFFYTPKT,ERGFFYTPKT,2,34636.88,75.000,36308,-0.02,non-binder
+binding_created_native_nonbinder,r45,Oxidation of C,QHLCGSHLV,QHLBGSHLV,QHLCGSHLV,4,15763.27,28.815,37883,-0.381,non-binder
+binding_created_native_nonbinder,r132,Citrullination,ERGFFYTPK,EUGFFYTPK,ERGFFYTPK,2,36974.04,61.875,38093,-0.013,non-binder
+binding_created_native_nonbinder,r115,Chlorination,CGERGFFYT,CGERGFFJT,CGERGFFYT,8,27380.67,67.500,38400,-0.147,non-binder
