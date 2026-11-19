@@ -25,3 +25,8 @@ timer.dat
 #   - data/validation/*.csv (the Step-1 PTM IC50 dataset)
 #   - results/*.csv         (Step-2+ scores)
 # If a step emits large/raw intermediates, add a targeted ignore for that exact path here.
+
+# Local editor and assistant scratch files, not part of the project
+.claude/
+CLAUDE.md
+PLAN.md

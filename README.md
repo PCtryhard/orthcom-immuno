@@ -43,8 +43,9 @@ EL %rank <= 2.0 and predicted affinity <= 500 nM.
 
 ## Results
 
-Produced by Step 2. `PLAN.md` still has Step 2 as `PROMPTED`, not `DONE`, because this
-repo only marks a step done after I verify it against the files by hand.
+These come from the surrogate baseline run. I generated them from the pipeline and have
+not yet hand-checked every row against the source paper, so I am treating them as
+provisional rather than final.
 
 **Rank order survives the swap.** Spearman rho in log space, n = 61:
 `naive_parent_map` +0.807, `charge_aware` +0.759. If all you need is to sort candidate
@@ -75,9 +76,9 @@ Assuming a post-translational modification is chemically invisible is therefore 
 The worst is a chlorinated tyrosine at position 8 of SHLVEALYLV: predicted 9.79 nM,
 measured 1066 nM.
 
-**No structure-based score exists yet.** Step 3 is the actual go/no-go and has not run,
-so the repo's eventual claim, that scoring the real modified residue does better than
-the swap, is at this point unmeasured.
+**No structure-based score exists yet.** Scoring the real modified residue in the groove
+is the actual go/no-go and I have not run it, so the claim this project is ultimately
+aiming at, that doing the chemistry properly beats the swap, is still unmeasured.
 
 ## Limitations
 
@@ -95,12 +96,12 @@ generalises to MHC-I as a class without more alleles and more source proteins.
 The modifications measured here are post-translational, not the synthetic aromatic ncAAs
 this project is ultimately aimed at. There is no open dataset of naphthylalanine or
 fluoro-phenylalanine peptides on A\*02:01 with measured binding, which is why the
-project validates on PTMs first. Extending to synthetic ncAAs is Step 5 and will be a
-falsifiable prediction, not a result.
+project validates on PTMs first. Extending to the synthetic ncAAs comes later and will
+be a falsifiable prediction, not a result.
 
 ## How to run
 
-Step 2 needs only the Python standard library plus NetMHCpan. NetMHCpan-4.1 standalone
+The baseline needs only the Python standard library plus NetMHCpan. NetMHCpan-4.1 standalone
 has to be requested from DTU under its own licence and is not vendored here.
 
 ```bash
@@ -134,7 +135,8 @@ The two ask different questions, so the pocket-design pipeline stays out of this
 scope: no RFdiffusionAA, no LigandMPNN, no AF2-multimer instrument here. That is a
 boundary between two live projects, not a statement that either is abandoned.
 
-## Where the reasoning is written down
+## Notes
 
-`PLAN.md` is the step plan and its status. `PROGRESS_LOG.md` is the decision log,
-including what failed. A step is marked done only after I check it against the files.
+`PROGRESS_LOG.md` is my working log: what I tried, what I checked, and why I changed
+direction. I only mark something finished once I have looked at the output files myself,
+which is why parts of this README say provisional.

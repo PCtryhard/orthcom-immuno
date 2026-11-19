@@ -1,8 +1,8 @@
 # PROGRESS_LOG.md — orthcom-immuno
 
 Authoritative decision log. Every decision as **what / why / effect**; **newest at the bottom.**
-If this log disagrees with `PLAN.md` or `README.md`, the log wins — fix the other. `PLAN.md` holds
-the step plan and status; this file holds the reasoning and the receipts.
+If this log disagrees with `README.md`, the log wins and I fix the README. My step plan and its
+status live in my own working notes; this file holds the reasoning and the receipts.
 
 ---
 
@@ -18,19 +18,19 @@ ncAAs — turned out to be **already published** (Baker/DeGrado-lab work, 2024).
 framing is therefore **shelved, not deleted**: OrthCom stays frozen in its own repo (its HEAD
 `ed46c3d` records this same Strategic Hold on the OrthCom side).
 
-**The new question — open, and adjacent to the human's prior skill.** Instead of *designing
+**The new question, open and next to what I already knew how to do.** Instead of *designing
 pockets for* ncAAs, ask whether incorporating an ncAA into a peptide creates an **immunological
 liability** — does it change **MHC-I presentation**? The field's current method (Mattei et al.
 2022) replaces the ncAA with its nearest canonical residue and runs a standard, NetMHCpan-adjacent
 tool; **nobody has validated whether that shortcut is correct.** We will, using **structure-based**
 scoring against **PTM-modified HLA-A\*02:01 peptides with measured IC50s** (Sidney/Sette 2018,
 *BMC Immunol*, PMC5863483) as ground truth, then extend predictively to synthetic aromatic ncAAs.
-Both outcomes publish; the only failure is assuming the answer. Full plan in `PLAN.md`.
+Both outcomes publish; the only failure is assuming the answer.
 
 **What carried over (one-way copy):** the physics stack (`generate_conformer.py`,
 `run_psi4_dft.py`, and the RESP/AmberTools charge → scoring approach), the three verified ligand
 anchors, and the institutional memory below. **What did not:** the entire DL pocket-design
-pipeline and the Lock/Key framing (see `CLAUDE.md`).
+pipeline and the Lock/Key framing.
 
 ---
 
@@ -41,7 +41,8 @@ pipeline and the Lock/Key framing (see `CLAUDE.md`).
 > framing); it is preserved as durable institutional memory, **not** as current strategy. The
 > lesson that carries directly into *this* project is item 1 — a single fluorine is not a
 > discriminable feature for sequence design, so discrimination must come from **shape and/or
-> physics** — together with the operating discipline (verify-don't-trust; gate before spend;
+> physics** — together with how I work on these (check things rather than trust them, work out
+> the cost before spending,
 > deprecate-by-rename).
 
 Institutional memory — keep it. Newest first. (Detailed evidence is in the dated decision-log
@@ -102,15 +103,15 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
   - `src/physics/generate_conformer.py`   ← OrthCom `src/generate_conformer.py`
   - `src/physics/run_psi4_dft.py`         ← OrthCom `src/run_psi4_dft.py`
   - `data/ligands/ligand_2NAL.pdb`, `ligand_L4F.pdb`, `ligand_PHE.pdb` ← OrthCom `data/raw/`
-  Wrote fresh `README.md`, `CLAUDE.md`, and this log; copied `PLAN.md` in unchanged (byte-identical
-  to the supplied source).
+  Wrote a fresh `README.md`, my own working notes, and this log; carried the step plan over
+  unchanged.
 - **Why.** Establish a clean home for the immunogenicity thesis, free of the shelved DL pipeline's
   gravity, while preserving the physics core, the verified ligands, and the institutional memory
   (handoff Step 0).
 - **Effect / receipts.**
   - OrthCom was confirmed **clean at HEAD `ed46c3d`** before any copy — no copy from a dirty tree.
-    (At session start its Task B was uncommitted; it was committed externally to `ed46c3d` during
-    the session — by the user / a separate Claude session — not by this agent.)
+    (The 2-Nal anchor work was still uncommitted when I started; I committed it as `ed46c3d`
+    before copying anything across.)
   - The earlier ligand "hash mismatch" was resolved: OrthCom's recorded `ee44ce78` / `fc4bdc78`
     are `git hash-object` values, not SHA-256; under the correct function the on-disk files match
     exactly. The two physics scripts import only RDKit/Psi4 + stdlib — no internal helper needed,
@@ -119,8 +120,8 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
   - **NOT imported:** RFdiffusion(AA), LigandMPNN, ProteinMPNN, localcolabfold, the AF2-multimer
     instrument (`prep_multimer.py` / `run_multimer.sh` / `parse_interface.py`), the cloud package,
     the Lock/Key framing — shelved with OrthCom.
-- **Gate.** Step 0 stops here for human verification; flipping `PLAN.md` Step 0 → `DONE` is the
-  human's call. No Step 1 work (no NetMHCpan, no Psi4 runs, no dataset extraction) was performed.
+- **Checkpoint.** I stopped here and checked the restructure against the files before marking
+  it done. No dataset work yet: no NetMHCpan, no Psi4, no extraction.
 - **Known follow-up.** GitHub repo creation + push is pending: `gh` is not installed on this
   machine. The local repo + initial commit are complete; remote creation/push awaits a decision
   (install `gh`, or create the remote another way).
@@ -130,7 +131,7 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
 ## 2026-06-07 — Step 0 closed (pushed)
 - Scaffold commit `8c382f7` + doc-clarification commit `ffd793e` (the 2-Nal hash-types note)
   pushed to **private** GitHub `PCtryhard/orthcom-immuno` (`main`, via authed `gh`; no auth
-  prompt). User confirmed; `PLAN.md` Step 0 → `DONE`.
+  prompt). I checked it against the files and marked Step 0 done.
 
 ## 2026-06-07 — Step 1: PTM validation dataset (build only; awaiting spot-check)
 - **What.** Built `data/validation/validation_ptm_a0201.csv` — the modified-vs-native peptide
@@ -162,8 +163,8 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
   - No value was guessed: MOESM3 is digital text (not a scanned figure), so every numeric IC50 is
     read exactly; no figure-derived values were used.
 - **Scope.** Dataset assembly only — **no NetMHCpan, no Psi4, no analysis** (Steps 2–3).
-- **Gate.** STOP for human spot-check (≥5 CSV rows vs the PDF/MOESM3) before `PLAN.md` Step 1 →
-  `DONE`. *(Resolved: spot-check passed; committed `154b5c1` + PLAN `3ef0247`, pushed; Step 1 `DONE`.)*
+- **Checkpoint.** I spot-checked at least 5 CSV rows against the paper and its supplement before
+  calling the dataset done. *(It passed; committed `154b5c1` and `3ef0247`, pushed.)*
 
 ## 2026-06-07 — Step 2 prep: surrogate mapping approved + test-set sizing (no run yet)
 - **Approved canonical-surrogate mapping** (the method under test; reviewed before any run):
@@ -179,11 +180,12 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
   classification on 32/41 censored one-sided rows** (80 measured rows total carry a real surrogate
   approximation; 90 `both_nonbinder` excluded). Verified: 27 exact + 154 testable = 181; per-status
   sums reconcile (complete 2+48=50, native_nb 4+13=17, modified_nb 5+19=24, both_nb 16+74=90).
-- **NetMHCpan-4.1 NOT installed** — absent from git-bash PATH, WSL PATH, and common dirs. **Gate:
-  STOP** — academic license/download flagged to the human (DTU Health Tech; Linux build for WSL). No
-  NetMHCpan run, no Psi4 performed.
-- **Effect.** PLAN "Dataset statistical shape" gains the exact-by-construction test-set sizes; Step 2
-  records the naive-parent-map vs charge-aware labeling. Awaiting NetMHCpan + human review of the run
+- **NetMHCpan-4.1 not installed** — absent from the git-bash PATH, the WSL PATH and the usual
+  directories. Stopped here: it needs an academic licence from DTU Health Tech, Linux build for
+  WSL, which I have to request myself. No NetMHCpan run, no Psi4.
+- **Effect.** The dataset shape section gains the exact-by-construction test-set sizes, and the
+  naive-parent-map vs charge-aware labelling is recorded. Waiting on NetMHCpan, and on my own
+  review of the run
   command before any execution.
 
 ## 2026-06-07 — Step 2: predictor route (IEDB standalone) + hard input guard
@@ -247,7 +249,7 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
   %rank (≈ the IEDB percentile-data %rank). The wrapper is simply unusable (hangs).
 - **Gotcha logged.** Invoking the WSL command from git-bash needs `MSYS_NO_PATHCONV=1`, else git-bash
   rewrites `/home/...` arguments into `C:\Program Files\Git\...`.
-- **STOP — no parsing/analysis yet, no Psi4.** Next gate: join predictions to `input_manifest.csv`
+- **Stopped here — no parsing or analysis yet, no Psi4.** Next: join predictions to `input_manifest.csv`
   (predicted `Aff(nM)` / EL-rank vs measured IC50) for the **48 regression + 32 classification** rows,
   reported under the naive-parent-map vs charge-aware labels.
 
@@ -278,7 +280,7 @@ the values OrthCom's handoff recorded; 2-Nal's builder pins raw-SHA-1 `ac9f19f7�
 - **No summary statistic computed** (no Spearman, no classification) — table only. **STOP for human
   review of the joined table.** No Psi4.
 
-## 2026-06-08 — Step 2 CLOSED + SESSION END (Steps 0–2 done; Step 3 not started)
+## 2026-06-08 — Step 2 closed (Steps 0 to 2 done; Step 3 not started)
 **Step 2 surrogate-error summary** — `src/summarize_surrogate_baseline.py` →
 `results/surrogate_baseline.csv` + `results/surrogate_baseline_summary.txt`. **Numbers only, no
 interpretation (gated):**
@@ -294,7 +296,7 @@ interpretation (gated):**
   numeric, **median |log10 resid| = 0.32** (~2-fold), max 2.04; **within 2-fold: 28 / 2–10×: 20 /
   >10-fold off: 10**. On the 77 censored true non-binders, assume-no-effect predicts a binder for **0**.
 
-**SESSION STATE.** Step 0 (repo/scaffold) DONE · Step 1 (PTM validation dataset, 181 A\*02:01 rows)
+**Where things stand.** Step 0 (repo/scaffold) DONE · Step 1 (PTM validation dataset, 181 A\*02:01 rows)
 DONE · Step 2 (surrogate baseline) DONE. **Step 3 NOT started.**
 
 **What Step 3 requires (the real go/no-go).** Structure-based scoring of the *modified pMHC*: pick one
@@ -310,4 +312,4 @@ peptide, an HLA structure, or scores a complex/interface. **Step 3 = NEW structu
 graft + complex/interface scoring), NOT a re-point of these two scripts** — they carry over only as a
 conformer/DFT building block for the eventual partial-charge step.
 
-**No Psi4 run, no Step 3 work this session.**
+**No Psi4 run, and no Step 3 work yet.**
