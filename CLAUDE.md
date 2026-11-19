@@ -27,8 +27,8 @@ publishable; the only failure is *assuming* the answer. See `README.md` for the 
 
 ## Carried over from OrthCom (use these)
 
-This repo pivots off **OrthCom**, a shelved pocket-design sub-project that stays frozen in its own
-repo. One-way **copies** were imported — there is no submodule and no live link:
+This repo pivots off **OrthCom**, which is an **active** pocket-design project in its
+own repo. One-way **copies** were imported, so there is no submodule and no live link:
 
 - `src/physics/generate_conformer.py`, `src/physics/run_psi4_dft.py` — the conformer → DFT
   scoring path (RDKit ETKDG/MMFF → Psi4 B3LYP/6-31G\*). The **scientific core** of this project.
@@ -39,16 +39,19 @@ repo. One-way **copies** were imported — there is no submodule and no live lin
   before use.
 - The **"What didn't work (and why)"** institutional memory and the operating discipline (below).
 
-## Do NOT import or reintroduce — the shelved DL pipeline
+## Do NOT import or reintroduce here (scope boundary, not abandonment)
 
-The OrthCom **deep-learning pocket-design pipeline is shelved and must not be wired back in:**
+OrthCom's **deep-learning pocket-design pipeline is out of scope for THIS repo** and must
+not be wired in here. It is **not** shelved: OrthCom is actively pursuing it on the 2-Nal
+target, and its own CLAUDE.md says so. This rule keeps two live projects separate, and it
+is not a reason to treat the pocket work as dead:
 - RFdiffusion / RFdiffusionAA, LigandMPNN, ProteinMPNN, localcolabfold.
 - The AF2-multimer instrument (`prep_multimer.py`, `run_multimer.sh`, `parse_interface.py`).
 - The cloud (Apptainer / GPU) package.
 - The **Lock / Key** framing, and any "pocket discrimination" or "platform / skyscraper" framing.
 
-If you find yourself reaching for any of these, **stop** — that is the old project's gravity, and
-escaping it is exactly why this repo exists. The pivot rationale is recorded in `PROGRESS_LOG.md`.
+If you find yourself reaching for any of these, **stop**: that work belongs in the OrthCom
+repo, not here. The rationale for splitting the two is recorded in `PROGRESS_LOG.md`.
 
 ## Gates (non-negotiable)
 
@@ -60,7 +63,7 @@ escaping it is exactly why this repo exists. The pivot rationale is recorded in 
   hypothetical.
 - **One step at a time.** Do only the step that is `PROMPTED` in `PLAN.md`; stop at its gate and
   report for human verification before touching the next.
-- **Deprecate by renaming, never deleting.** Preserve history; OrthCom stays frozen, not deleted.
+- **Deprecate by renaming, never deleting.** Preserve history.
 - **Small, reviewable commits; show diffs; never force-push.**
 
 ## Environment

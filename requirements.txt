@@ -1,0 +1,15 @@
+# The Step 2 surrogate baseline needs no third-party packages. Every script in that
+# path (src/build_surrogate_input.py, src/parse_surrogate_baseline.py,
+# src/summarize_surrogate_baseline.py, src/seq_guard.py, and
+# data/validation/build_validation_ptm_a0201.py) imports only the standard library:
+# csv, os, sys, math, statistics, zipfile, collections, pathlib, xml.etree.
+#
+# What it does need is NetMHCpan-4.1 standalone, which has to be requested from DTU
+# under its own licence and is not vendored here. See "How to run" in README.md.
+
+# The physics scripts in src/physics/ need these two, and neither installs reliably
+# from pip. Use conda:
+#   conda install -c conda-forge rdkit psi4
+#
+# rdkit
+# psi4
